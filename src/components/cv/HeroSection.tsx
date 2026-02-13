@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Linkedin, MapPin } from "lucide-react";
+import { Mail, Linkedin, MapPin, Download } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -90,6 +90,22 @@ const HeroSection = () => {
               <MapPin className="w-4 h-4" />
               <span>Mauritius</span>
             </span>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.3, duration: 0.6 }}
+            className="mt-8"
+          >
+            <a
+              href="/Nisha_Appanah_CV.pdf"
+              download
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-body font-semibold hover:opacity-90 transition-opacity"
+            >
+              <Download className="w-4 h-4" />
+              Download CV
+            </a>
           </motion.div>
         </motion.div>
 
