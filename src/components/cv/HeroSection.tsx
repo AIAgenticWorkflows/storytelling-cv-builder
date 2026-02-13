@@ -98,14 +98,16 @@ const HeroSection = () => {
             transition={{ delay: 1.3, duration: 0.6 }}
             className="mt-8"
           >
-            <a
+            <motion.a
               href="/Nisha_Appanah_CV.pdf"
               download
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-body font-semibold hover:opacity-90 transition-opacity"
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.97 }}
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-body font-semibold hover:shadow-lg hover:shadow-primary/25 transition-shadow"
             >
               <Download className="w-4 h-4" />
               Download CV
-            </a>
+            </motion.a>
           </motion.div>
         </motion.div>
 

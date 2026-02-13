@@ -87,7 +87,8 @@ const RecommendationsSection = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.4 }}
-              className="bg-quote-bg border border-border/50 rounded-2xl p-8 md:p-12 relative"
+              whileHover={{ scale: 1.01 }}
+              className="bg-quote-bg border border-border/50 rounded-2xl p-8 md:p-12 relative hover:shadow-xl hover:border-primary/20 transition-all duration-300"
             >
               <Quote className="absolute top-6 left-6 w-10 h-10 text-primary/15" />
               <div className="relative z-10">
@@ -109,13 +110,15 @@ const RecommendationsSection = () => {
 
           {/* Navigation */}
           <div className="flex items-center justify-center gap-4 mt-8">
-            <button
+            <motion.button
+              whileHover={{ scale: 1.15 }}
+              whileTap={{ scale: 0.9 }}
               onClick={prev}
               className="w-10 h-10 rounded-full border border-border bg-background flex items-center justify-center hover:border-primary/40 hover:bg-primary/5 transition-all"
               aria-label="Previous recommendation"
             >
               <ChevronLeft className="w-4 h-4 text-foreground" />
-            </button>
+            </motion.button>
 
             <div className="flex gap-2">
               {recommendations.map((_, i) => (
@@ -132,13 +135,15 @@ const RecommendationsSection = () => {
               ))}
             </div>
 
-            <button
+            <motion.button
+              whileHover={{ scale: 1.15 }}
+              whileTap={{ scale: 0.9 }}
               onClick={next}
               className="w-10 h-10 rounded-full border border-border bg-background flex items-center justify-center hover:border-primary/40 hover:bg-primary/5 transition-all"
               aria-label="Next recommendation"
             >
               <ChevronRight className="w-4 h-4 text-foreground" />
-            </button>
+            </motion.button>
           </div>
         </div>
       </div>

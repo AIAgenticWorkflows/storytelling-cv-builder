@@ -34,11 +34,16 @@ const EducationSection = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="flex gap-4 items-start"
+              whileHover={{ x: 8, scale: 1.01 }}
+              className="flex gap-4 items-start p-4 rounded-xl hover:bg-background/80 transition-colors duration-200 cursor-default"
             >
-              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 mt-1">
+              <motion.div
+                whileHover={{ rotate: 12 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 mt-1"
+              >
                 <GraduationCap className="w-5 h-5 text-primary" />
-              </div>
+              </motion.div>
               <div>
                 <h3 className="font-display text-lg font-semibold text-foreground">
                   {edu.school}
