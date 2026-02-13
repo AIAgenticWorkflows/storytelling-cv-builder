@@ -115,17 +115,15 @@ const JourneyTimeline = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className={`relative flex flex-col md:flex-row items-start mb-12 ${
-                  isLeft ? "md:flex-row" : "md:flex-row-reverse"
-                }`}
+                className="relative flex flex-col md:flex-row items-start mb-12"
               >
                 {/* Dot */}
                 <div className="absolute left-8 md:left-1/2 w-4 h-4 -translate-x-1/2 rounded-full bg-background border-[3px] border-timeline-dot z-10 top-2" />
 
-                {/* Content */}
+                {/* Content — always left-aligned text for readability */}
                 <div
                   className={`ml-16 md:ml-0 md:w-[calc(50%-2rem)] ${
-                    isLeft ? "md:pr-12 md:text-right" : "md:pl-12 md:text-left"
+                    isLeft ? "md:pr-12" : "md:pl-12 md:ml-auto"
                   }`}
                 >
                   <div
@@ -145,16 +143,15 @@ const JourneyTimeline = () => {
                       {entry.period}
                       {entry.location && ` · ${entry.location}`}
                     </p>
-                    <p className="font-body text-foreground/80 leading-relaxed text-[0.95rem]">
+                    <p className="font-body text-foreground leading-relaxed text-[0.95rem]">
                       {entry.narrative}
                     </p>
                     {entry.highlights && (
-                      <ul className={`mt-3 space-y-1 ${isLeft ? "md:text-right" : ""}`}>
+                      <ul className="mt-3 space-y-1">
                         {entry.highlights.map((h, i) => (
                           <li
                             key={i}
                             className="text-sm text-muted-foreground font-body flex items-center gap-2"
-                            style={{ justifyContent: isLeft ? "flex-end" : "flex-start" }}
                           >
                             <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
                             {h}

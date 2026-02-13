@@ -6,102 +6,102 @@
 
 @layer base {
   :root {
-    --background: 210 20% 98%;
-    --foreground: 220 25% 12%;
+    --background: 220 20% 98%;
+    --foreground: 222 30% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 25% 12%;
+    --card-foreground: 222 30% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 25% 12%;
+    --popover-foreground: 222 30% 12%;
 
-    --primary: 185 55% 38%;
+    --primary: 222 65% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 15% 93%;
-    --secondary-foreground: 220 20% 25%;
+    --secondary: 220 20% 93%;
+    --secondary-foreground: 222 25% 22%;
 
-    --muted: 210 12% 94%;
-    --muted-foreground: 220 10% 46%;
+    --muted: 220 15% 94%;
+    --muted-foreground: 222 12% 42%;
 
-    --accent: 185 45% 92%;
-    --accent-foreground: 185 55% 28%;
+    --accent: 200 70% 92%;
+    --accent-foreground: 222 65% 40%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 15% 90%;
-    --input: 210 15% 90%;
-    --ring: 185 55% 38%;
+    --border: 220 18% 88%;
+    --input: 220 18% 88%;
+    --ring: 222 65% 50%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 210 15% 96%;
-    --sidebar-foreground: 220 25% 12%;
-    --sidebar-primary: 185 55% 38%;
+    --sidebar-background: 220 18% 96%;
+    --sidebar-foreground: 222 30% 12%;
+    --sidebar-primary: 222 65% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 210 15% 93%;
-    --sidebar-accent-foreground: 220 20% 25%;
-    --sidebar-border: 210 15% 90%;
-    --sidebar-ring: 185 55% 38%;
+    --sidebar-accent: 220 20% 93%;
+    --sidebar-accent-foreground: 222 25% 22%;
+    --sidebar-border: 220 18% 88%;
+    --sidebar-ring: 222 65% 50%;
 
     /* Custom CV tokens */
-    --warm-glow: 210 15% 96%;
-    --warm-highlight: 185 55% 42%;
-    --warm-deep: 220 25% 15%;
-    --warm-sand: 210 12% 92%;
-    --timeline-line: 210 15% 85%;
-    --timeline-dot: 185 55% 38%;
-    --quote-bg: 210 15% 96%;
-    --quote-border: 185 50% 42%;
+    --warm-glow: 220 20% 96%;
+    --warm-highlight: 222 65% 55%;
+    --warm-deep: 222 30% 15%;
+    --warm-sand: 220 15% 92%;
+    --timeline-line: 222 30% 82%;
+    --timeline-dot: 222 65% 50%;
+    --quote-bg: 220 25% 96%;
+    --quote-border: 222 60% 55%;
   }
 
   .dark {
-    --background: 220 20% 7%;
-    --foreground: 210 15% 92%;
+    --background: 222 25% 7%;
+    --foreground: 220 15% 92%;
 
-    --card: 220 18% 11%;
-    --card-foreground: 210 15% 92%;
+    --card: 222 22% 11%;
+    --card-foreground: 220 15% 92%;
 
-    --popover: 220 18% 11%;
-    --popover-foreground: 210 15% 92%;
+    --popover: 222 22% 11%;
+    --popover-foreground: 220 15% 92%;
 
-    --primary: 185 50% 50%;
-    --primary-foreground: 220 20% 7%;
+    --primary: 222 60% 60%;
+    --primary-foreground: 222 25% 7%;
 
-    --secondary: 220 15% 16%;
-    --secondary-foreground: 210 15% 88%;
+    --secondary: 222 18% 16%;
+    --secondary-foreground: 220 15% 88%;
 
-    --muted: 220 15% 16%;
-    --muted-foreground: 210 10% 55%;
+    --muted: 222 18% 16%;
+    --muted-foreground: 220 12% 55%;
 
-    --accent: 185 40% 18%;
-    --accent-foreground: 185 50% 80%;
+    --accent: 222 40% 18%;
+    --accent-foreground: 222 55% 78%;
 
     --destructive: 0 62% 30%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 15% 18%;
-    --input: 220 15% 18%;
-    --ring: 185 50% 50%;
+    --border: 222 18% 18%;
+    --input: 222 18% 18%;
+    --ring: 222 60% 60%;
 
-    --sidebar-background: 220 20% 9%;
-    --sidebar-foreground: 210 15% 90%;
-    --sidebar-primary: 185 50% 50%;
-    --sidebar-primary-foreground: 220 20% 7%;
-    --sidebar-accent: 220 15% 14%;
-    --sidebar-accent-foreground: 210 15% 90%;
-    --sidebar-border: 220 15% 18%;
-    --sidebar-ring: 185 50% 50%;
+    --sidebar-background: 222 22% 9%;
+    --sidebar-foreground: 220 15% 90%;
+    --sidebar-primary: 222 60% 60%;
+    --sidebar-primary-foreground: 222 25% 7%;
+    --sidebar-accent: 222 18% 14%;
+    --sidebar-accent-foreground: 220 15% 90%;
+    --sidebar-border: 222 18% 18%;
+    --sidebar-ring: 222 60% 60%;
 
-    --warm-glow: 220 18% 12%;
-    --warm-highlight: 185 50% 50%;
-    --warm-deep: 210 15% 88%;
-    --warm-sand: 220 15% 16%;
-    --timeline-line: 220 15% 25%;
-    --timeline-dot: 185 50% 50%;
-    --quote-bg: 220 15% 12%;
-    --quote-border: 185 45% 45%;
+    --warm-glow: 222 20% 12%;
+    --warm-highlight: 222 60% 60%;
+    --warm-deep: 220 15% 88%;
+    --warm-sand: 222 18% 16%;
+    --timeline-line: 222 18% 28%;
+    --timeline-dot: 222 60% 60%;
+    --quote-bg: 222 18% 12%;
+    --quote-border: 222 50% 50%;
   }
 }
 @layer base {
