@@ -34,7 +34,7 @@ const certifications = [
 
 const SkillsSection = () => {
   return (
-    <section className="py-24 px-6 bg-warm-glow" id="skills">
+    <section className="py-12 md:py-24 px-4 md:px-6 bg-warm-glow" id="skills">
       <div className="container mx-auto max-w-5xl">
         <SectionHeader
           label="Expertise"
@@ -42,7 +42,7 @@ const SkillsSection = () => {
           subtitle="A rare blend of deep technical roots, product leadership, and AI-forward thinking."
         />
 
-        <div className="grid md:grid-cols-2 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-10 md:mb-16">
           {skillCategories.map((cat, i) => (
             <motion.div
               key={cat.label}
@@ -51,7 +51,7 @@ const SkillsSection = () => {
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               whileHover={{ scale: 1.03, y: -4 }}
-              className="bg-background rounded-xl p-6 border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-xl group cursor-default"
+              className="bg-background rounded-xl p-4 md:p-6 border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-xl group cursor-default"
             >
               <div className="flex items-center gap-3 mb-4">
                 <motion.div

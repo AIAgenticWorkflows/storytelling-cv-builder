@@ -3,7 +3,7 @@ import { Mail, Linkedin, Heart } from "lucide-react";
 
 const FooterSection = () => {
   return (
-    <footer className="py-20 px-6" id="contact">
+    <footer className="py-12 md:py-20 px-4 md:px-6" id="contact">
       <div className="container mx-auto max-w-2xl text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -11,11 +11,11 @@ const FooterSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-2xl md:text-4xl font-bold text-foreground mb-3 md:mb-4">
             Let's Build Something{" "}
             <span className="text-primary italic">Remarkable</span>
           </h2>
-          <p className="font-body text-muted-foreground text-lg mb-8 leading-relaxed">
+          <p className="font-body text-muted-foreground text-base md:text-lg mb-6 md:mb-8 leading-relaxed">
             I'm looking for my next chapter: leading product and AI innovation 
             at a company that believes technology should serve people, not the other way around.
           </p>

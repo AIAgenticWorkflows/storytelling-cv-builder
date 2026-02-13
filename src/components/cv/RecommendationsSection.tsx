@@ -71,7 +71,7 @@ const RecommendationsSection = () => {
   const rec = recommendations[current];
 
   return (
-    <section className="py-24 px-6" id="recommendations">
+    <section className="py-12 md:py-24 px-4 md:px-6" id="recommendations">
       <div className="container mx-auto max-w-4xl">
         <SectionHeader
           label="What People Say"
@@ -88,11 +88,11 @@ const RecommendationsSection = () => {
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.4 }}
               whileHover={{ scale: 1.01 }}
-              className="bg-quote-bg border border-border/50 rounded-2xl p-8 md:p-12 relative hover:shadow-xl hover:border-primary/20 transition-all duration-300"
+              className="bg-quote-bg border border-border/50 rounded-2xl p-6 md:p-12 relative hover:shadow-xl hover:border-primary/20 transition-all duration-300"
             >
               <Quote className="absolute top-6 left-6 w-10 h-10 text-primary/15" />
               <div className="relative z-10">
-                <p className="font-body text-foreground/85 text-lg leading-relaxed mb-8 italic">
+                <p className="font-body text-foreground/85 text-base md:text-lg leading-relaxed mb-6 md:mb-8 italic">
                   "{rec.text}"
                 </p>
                 <div className="border-t border-border/50 pt-6">
