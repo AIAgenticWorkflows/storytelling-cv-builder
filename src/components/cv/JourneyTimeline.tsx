@@ -1,5 +1,11 @@
 import { motion } from "framer-motion";
+import { ExternalLink } from "lucide-react";
 import SectionHeader from "./SectionHeader";
+
+interface PortfolioLink {
+  label: string;
+  url: string;
+}
 
 interface TimelineEntry {
   company: string;
@@ -9,6 +15,7 @@ interface TimelineEntry {
   narrative: string;
   highlights?: string[];
   accent?: boolean;
+  portfolio?: PortfolioLink[];
 }
 
 const timeline: TimelineEntry[] = [
@@ -39,6 +46,12 @@ const timeline: TimelineEntry[] = [
       "Collaborated across multiple international markets",
       "Partnered directly with CEOs on strategy & execution",
     ],
+    portfolio: [
+      { label: "PropertyCloud Mauritius", url: "https://www.propertycloud.mu/" },
+      { label: "BuyRentKenya", url: "https://www.buyrentkenya.com/" },
+      { label: "Property Zimbabwe", url: "https://www.property.co.zw/" },
+      { label: "Imobiliare Romania", url: "https://www.imobiliare.ro/" },
+    ],
   },
   {
     company: "Ringier South Africa",
@@ -49,6 +62,12 @@ const timeline: TimelineEntry[] = [
     highlights: [
       "Scalable features deployed in 5 African countries",
       "Dynamic form builder powering high-converting pages",
+    ],
+    portfolio: [
+      { label: "PropertyCloud Mauritius", url: "https://www.propertycloud.mu/" },
+      { label: "BuyRentKenya", url: "https://www.buyrentkenya.com/" },
+      { label: "Property Zimbabwe", url: "https://www.property.co.zw/" },
+      { label: "Imobiliare Romania", url: "https://www.imobiliare.ro/" },
     ],
   },
   {
@@ -82,6 +101,10 @@ const timeline: TimelineEntry[] = [
     location: "Quatre Bornes",
     narrative:
       "Where it all started in industry. Built university applications, electronic business document systems for the EU-funded PEPPOL project, and rule engine modules for internal search. The foundation years.",
+    portfolio: [
+      { label: "MailEDI", url: "https://www.mailedi.biz/" },
+      { label: "PEPPOL", url: "https://peppol.org/" },
+    ],
   },
   {
     company: "University of Mauritius",
@@ -165,6 +188,22 @@ const JourneyTimeline = () => {
                           </li>
                         ))}
                       </ul>
+                    )}
+                    {entry.portfolio && (
+                      <div className="mt-3 flex flex-wrap gap-2">
+                        {entry.portfolio.map((link, i) => (
+                          <a
+                            key={i}
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 text-xs font-body text-primary hover:text-primary/80 bg-primary/10 hover:bg-primary/15 px-2.5 py-1 rounded-full transition-colors"
+                          >
+                            <ExternalLink className="w-3 h-3" />
+                            {link.label}
+                          </a>
+                        ))}
+                      </div>
                     )}
                   </div>
                 </div>
