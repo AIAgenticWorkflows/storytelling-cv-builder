@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Mail, Linkedin, MapPin, Download } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.jfif";
 
 const HeroSection = () => {
   return (
@@ -18,6 +19,20 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center"
         >
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.1, duration: 0.6 }}
+            className="mb-6"
+          >
+            <motion.img
+              src={profilePhoto}
+              alt="Nisha Appanah"
+              whileHover={{ scale: 1.05 }}
+              className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto object-cover border-4 border-primary/20 shadow-lg shadow-primary/10"
+            />
+          </motion.div>
+
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
