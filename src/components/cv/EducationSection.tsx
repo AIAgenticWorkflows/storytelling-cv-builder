@@ -22,7 +22,7 @@ const education = [
 
 const EducationSection = () => {
   return (
-    <section className="py-24 px-6 bg-warm-glow" id="education">
+    <section className="py-12 md:py-24 px-4 md:px-6 bg-warm-glow" id="education">
       <div className="container mx-auto max-w-3xl">
         <SectionHeader label="Foundation" title="Education" />
 

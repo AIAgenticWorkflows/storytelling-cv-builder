@@ -104,7 +104,7 @@ const RoleTailoringSection = () => {
   };
 
   return (
-    <section className="py-24 px-6" id="tailoring">
+    <section className="py-12 md:py-24 px-4 md:px-6" id="tailoring">
       <div className="container mx-auto max-w-5xl">
         <SectionHeader
           label="AI Role Fit"

@@ -117,7 +117,7 @@ const timeline: TimelineEntry[] = [
 
 const JourneyTimeline = () => {
   return (
-    <section className="py-24 px-6" id="journey">
+    <section className="py-12 md:py-24 px-4 md:px-6" id="journey">
       <div className="container mx-auto max-w-4xl">
         <SectionHeader
           label="The Journey"
@@ -139,7 +139,7 @@ const JourneyTimeline = () => {
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.6, delay: 0.1 }}
                 whileHover={{ scale: 1.02 }}
-                className="relative flex flex-col md:flex-row items-start mb-12"
+                className="relative flex flex-col md:flex-row items-start mb-8 md:mb-12"
               >
                 {/* Dot */}
                 <motion.div
@@ -157,7 +157,7 @@ const JourneyTimeline = () => {
                   }`}
                 >
                   <div
-                    className={`p-6 rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-primary/30 cursor-default ${
+                    className={`p-4 md:p-6 rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-primary/30 cursor-default ${
                       entry.accent
                         ? "bg-primary/5 border border-primary/15"
                         : "bg-card border border-border/50"
@@ -166,7 +166,7 @@ const JourneyTimeline = () => {
                     <p className="text-primary font-body text-sm font-semibold uppercase tracking-wider mb-1">
                       {entry.company}
                     </p>
-                    <h3 className="font-display text-xl font-bold text-foreground mb-1">
+                    <h3 className="font-display text-lg md:text-xl font-bold text-foreground mb-1">
                       {entry.role}
                     </h3>
                     <p className="text-muted-foreground font-body text-sm mb-3">
