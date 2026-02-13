@@ -131,7 +131,12 @@ const RoleTailoringSection = () => {
               <textarea
                 id="job-description"
                 value={jobDescription}
-                onChange={(e) => setJobDescription(e.target.value)}
+                onChange={(e) => {
+                  if (e.target.value.length <= 10000) {
+                    setJobDescription(e.target.value);
+                  }
+                }}
+                maxLength={10000}
                 placeholder="Paste the job description here..."
                 className="flex-1 min-h-[200px] md:min-h-[280px] w-full rounded-xl border border-border bg-background px-4 py-3 font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary/50 transition-all resize-none"
               />
