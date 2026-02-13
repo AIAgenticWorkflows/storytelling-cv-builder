@@ -57,6 +57,20 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        warm: {
+          glow: "hsl(var(--warm-glow))",
+          highlight: "hsl(var(--warm-highlight))",
+          deep: "hsl(var(--warm-deep))",
+          sand: "hsl(var(--warm-sand))",
+        },
+        timeline: {
+          line: "hsl(var(--timeline-line))",
+          dot: "hsl(var(--timeline-dot))",
+        },
+        quote: {
+          bg: "hsl(var(--quote-bg))",
+          border: "hsl(var(--quote-border))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
