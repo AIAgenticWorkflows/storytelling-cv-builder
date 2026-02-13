@@ -4,7 +4,7 @@ import profilePhoto from "@/assets/profile-photo.jfif";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[80vh] md:min-h-[90vh] flex items-center justify-center overflow-hidden pt-16 md:pt-0">
+    <section className="relative min-h-[80vh] md:min-h-[90vh] flex items-center justify-center overflow-hidden pt-20 md:pt-24">
       {/* Organic background shapes */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 rounded-full bg-primary/5 blur-3xl" />
