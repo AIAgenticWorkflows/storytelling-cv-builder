@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Linkedin, MapPin, Download } from "lucide-react";
+import { Linkedin, Download } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jfif";
 
 const HeroSection = () => {
@@ -47,7 +47,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="font-display text-6xl md:text-8xl font-bold text-foreground mb-6 leading-tight"
+            className="font-display text-4xl sm:text-6xl md:text-8xl font-bold text-foreground mb-4 md:mb-6 leading-tight"
           >
             Nisha{" "}
             <span className="text-primary italic">Appanah</span>
@@ -64,7 +64,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.6 }}
-            className="font-display text-xl md:text-2xl text-muted-foreground mb-6 italic"
+            className="font-display text-lg md:text-2xl text-muted-foreground mb-4 md:mb-6 italic px-2"
           >
             20-Year Tech Leader · Product, Software & AI Strategy
           </motion.p>
@@ -73,7 +73,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 0.6 }}
-            className="font-body text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
+            className="font-body text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-8 md:mb-10 leading-relaxed px-2"
           >
             I'm a technology leader who turns complex challenges into practical solutions. 
             With two decades of building products, leading teams, and driving AI innovation 
@@ -87,13 +87,6 @@ const HeroSection = () => {
             className="flex flex-wrap items-center justify-center gap-6 text-muted-foreground"
           >
             <a
-              href="mailto:n.appanah@gmail.com"
-              className="flex items-center gap-2 hover:text-primary transition-colors duration-300 font-body"
-            >
-              <Mail className="w-4 h-4" />
-              <span>n.appanah@gmail.com</span>
-            </a>
-            <a
               href="https://www.linkedin.com/in/nishaappanah/"
               target="_blank"
               rel="noopener noreferrer"
@@ -102,10 +95,6 @@ const HeroSection = () => {
               <Linkedin className="w-4 h-4" />
               <span>LinkedIn</span>
             </a>
-            <span className="flex items-center gap-2 font-body">
-              <MapPin className="w-4 h-4" />
-              <span>Mauritius</span>
-            </span>
           </motion.div>
 
           <motion.div
