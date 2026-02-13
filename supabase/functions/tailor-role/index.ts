@@ -32,16 +32,44 @@ LANGUAGES: English, French, Mauritian Creole.
 PORTFOLIO: PropertyCloud Mauritius, BuyRentKenya, Property Zimbabwe, Imobiliare Romania, MailEDI, PEPPOL.
 `;
 
+// Simple in-memory rate limiter (per isolate lifetime)
+const rateLimitMap = new Map<string, number[]>();
+const RATE_LIMIT_WINDOW_MS = 60_000; // 1 minute
+const RATE_LIMIT_MAX = 5; // max requests per window per IP
+
 serve(async (req) => {
   if (req.method === "OPTIONS") {
     return new Response(null, { headers: corsHeaders });
   }
 
   try {
+    // Rate limiting by client IP
+    const clientIP = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
+    const now = Date.now();
+    const timestamps = (rateLimitMap.get(clientIP) || []).filter(
+      (t) => now - t < RATE_LIMIT_WINDOW_MS
+    );
+    if (timestamps.length >= RATE_LIMIT_MAX) {
+      return new Response(
+        JSON.stringify({ error: "Rate limit exceeded. Please try again in a moment." }),
+        { status: 429, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      );
+    }
+    timestamps.push(now);
+    rateLimitMap.set(clientIP, timestamps);
+
     const { jobDescription } = await req.json();
     if (!jobDescription || typeof jobDescription !== "string") {
       return new Response(
         JSON.stringify({ error: "Please provide a job description." }),
+        { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      );
+    }
+
+    // Enforce input length limit (10,000 characters)
+    if (jobDescription.length > 10_000) {
+      return new Response(
+        JSON.stringify({ error: "Job description too long. Please limit to 10,000 characters." }),
         { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } }
       );
     }
