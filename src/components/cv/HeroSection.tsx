@@ -23,13 +23,14 @@ const HeroSection = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.1, duration: 0.6 }}
-            className="mb-6"
+            className="mb-6 relative inline-block"
           >
+            <div className="absolute -inset-2 rounded-full bg-gradient-to-br from-primary/30 via-accent/20 to-primary/10 blur-md" />
             <motion.img
               src={profilePhoto}
               alt="Nisha Appanah"
               whileHover={{ scale: 1.05 }}
-              className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto object-cover border-4 border-primary/20 shadow-lg shadow-primary/10"
+              className="relative w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto object-cover border-[3px] border-background shadow-xl shadow-primary/15 ring-2 ring-primary/20"
             />
           </motion.div>
 
