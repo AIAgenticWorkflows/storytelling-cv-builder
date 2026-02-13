@@ -75,9 +75,9 @@ const HeroSection = () => {
             transition={{ delay: 0.9, duration: 0.6 }}
             className="font-body text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            I'm a technology leader who turns complex challenges into elegant solutions. 
-            With two decades of building products, leading teams, and pioneering AI innovation 
-            across continents — I thrive where technology meets human impact.
+            I'm a technology leader who turns complex challenges into practical solutions. 
+            With two decades of building products, leading teams, and driving AI innovation 
+            across continents, I thrive where technology meets real human impact.
           </motion.p>
 
           <motion.div
