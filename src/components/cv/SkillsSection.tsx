@@ -50,12 +50,17 @@ const SkillsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-background rounded-xl p-6 border border-border/50 hover:border-primary/20 transition-all duration-300 hover:shadow-md group"
+              whileHover={{ scale: 1.03, y: -4 }}
+              className="bg-background rounded-xl p-6 border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-xl group cursor-default"
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
+                <motion.div
+                  whileHover={{ rotate: 12 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                  className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors"
+                >
                   <cat.icon className="w-5 h-5 text-primary" />
-                </div>
+                </motion.div>
                 <h3 className="font-display text-lg font-semibold text-foreground">
                   {cat.label}
                 </h3>
@@ -64,7 +69,7 @@ const SkillsSection = () => {
                 {cat.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="text-sm font-body px-3 py-1 rounded-full bg-secondary text-secondary-foreground"
+                    className="text-sm font-body px-3 py-1 rounded-full bg-secondary text-secondary-foreground hover:bg-primary/10 hover:text-primary transition-colors duration-200 cursor-default"
                   >
                     {skill}
                   </span>

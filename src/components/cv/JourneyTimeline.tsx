@@ -115,10 +115,17 @@ const JourneyTimeline = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.6, delay: 0.1 }}
+                whileHover={{ scale: 1.02 }}
                 className="relative flex flex-col md:flex-row items-start mb-12"
               >
                 {/* Dot */}
-                <div className="absolute left-8 md:left-1/2 w-4 h-4 -translate-x-1/2 rounded-full bg-background border-[3px] border-timeline-dot z-10 top-2" />
+                <motion.div
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: 0.3, type: "spring", stiffness: 300 }}
+                  className="absolute left-8 md:left-1/2 w-4 h-4 -translate-x-1/2 rounded-full bg-background border-[3px] border-timeline-dot z-10 top-2"
+                />
 
                 {/* Content — always left-aligned text for readability */}
                 <div
@@ -127,7 +134,7 @@ const JourneyTimeline = () => {
                   }`}
                 >
                   <div
-                    className={`p-6 rounded-xl transition-all duration-300 hover:shadow-lg ${
+                    className={`p-6 rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-primary/30 cursor-default ${
                       entry.accent
                         ? "bg-primary/5 border border-primary/15"
                         : "bg-card border border-border/50"

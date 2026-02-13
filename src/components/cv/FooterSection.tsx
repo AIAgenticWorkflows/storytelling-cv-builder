@@ -21,22 +21,26 @@ const FooterSection = () => {
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <a
+            <motion.a
               href="mailto:n.appanah@gmail.com"
-              className="flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-body font-semibold hover:opacity-90 transition-opacity"
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.97 }}
+              className="flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-body font-semibold hover:shadow-lg hover:shadow-primary/25 transition-shadow"
             >
               <Mail className="w-4 h-4" />
               Get in Touch
-            </a>
-            <a
+            </motion.a>
+            <motion.a
               href="https://www.linkedin.com/in/nishaappanah/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-6 py-3 rounded-full border border-border bg-background text-foreground font-body font-semibold hover:border-primary/40 transition-colors"
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.97 }}
+              className="flex items-center gap-2 px-6 py-3 rounded-full border border-border bg-background text-foreground font-body font-semibold hover:border-primary/40 hover:shadow-lg transition-all"
             >
               <Linkedin className="w-4 h-4" />
               LinkedIn
-            </a>
+            </motion.a>
           </div>
 
           <p className="mt-16 text-sm text-muted-foreground font-body flex items-center justify-center gap-1">
