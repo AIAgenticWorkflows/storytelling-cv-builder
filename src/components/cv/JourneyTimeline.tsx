@@ -15,25 +15,25 @@ const timeline: TimelineEntry[] = [
   {
     company: "Aplica Ltd",
     role: "Founder",
-    period: "Nov 2024 — Present",
+     period: "Nov 2024 – Present",
     narrative:
-      "Returning full circle. After two decades of building for others, I launched my own venture — helping businesses unlock growth through practical AI solutions. Every lesson, every migration, every late-night debug session led here.",
+      "Returning full circle. After two decades of building for others, I launched my own venture, helping businesses unlock growth through practical AI solutions. Every lesson, every migration, every late-night debug session led here.",
     accent: true,
   },
   {
     company: "Ringier South Africa",
-    role: "Product Manager — AI Team",
-    period: "Jun 2024 — Oct 2024",
+    role: "Product Manager, AI Team",
+    period: "Jun 2024 – Oct 2024",
     narrative:
-      "Pitched Ally Agent, an AI-powered solution matching property seekers to listings. Took it from concept to the next approval stage — blending product instinct with cutting-edge generative AI.",
+      "Pitched Ally Agent, an AI-powered solution matching property seekers to listings. Took it from concept to the next approval stage, blending product instinct with generative AI.",
     accent: true,
   },
   {
     company: "Ringier South Africa",
-    role: "Product Manager — Property Marketplace",
-    period: "Jul 2019 — Oct 2024",
+    role: "Product Manager, Property Marketplace",
+    period: "Jul 2019 – Oct 2024",
     narrative:
-      "Five years steering a 17-member cross-functional team through the most ambitious transformation the marketplace had seen. I partnered with CEOs, owned the roadmap, led two major platform migrations — all while keeping the lights on and revenue growing.",
+      "Five years steering a 17-member cross-functional team through the most ambitious transformation the marketplace had seen. I partnered with CEOs, owned the roadmap, and led two major platform migrations while keeping revenue growing.",
     highlights: [
       "Led 2 major platform migrations with zero business disruption",
       "Collaborated across multiple international markets",
@@ -43,9 +43,9 @@ const timeline: TimelineEntry[] = [
   {
     company: "Ringier South Africa",
     role: "Senior Software Developer",
-    period: "Feb 2017 — Jun 2019",
+    period: "Feb 2017 – Jun 2019",
     narrative:
-      "This is where my product instincts sharpened. I architected the end-to-end property listing flow, built features deployed across 5 African countries, and created a dynamic form builder that powered high-converting landing pages.",
+      "This is where my product instincts sharpened. I architected the end-to-end property listing flow, built features deployed across 5 African countries, and created a dynamic form builder powering high-converting landing pages.",
     highlights: [
       "Scalable features deployed in 5 African countries",
       "Dynamic form builder powering high-converting pages",
@@ -54,31 +54,31 @@ const timeline: TimelineEntry[] = [
   {
     company: "Aplica Ltd",
     role: "Managing Director",
-    period: "Mar 2015 — Jan 2017",
+    period: "Mar 2015 – Jan 2017",
     location: "Mauritius",
     narrative:
-      "Built and maintained live housing systems for the University of Copenhagen and the Technical University of Denmark. Optimized algorithms and databases, designed features from customer feedback, and delivered training to partners across borders.",
+      "Built and maintained live housing systems for the University of Copenhagen and the Technical University of Denmark. Optimised algorithms and databases, designed features from customer feedback, and delivered training to partners across borders.",
   },
   {
     company: "Expand Technology",
     role: "Project Manager",
-    period: "Feb 2013 — Feb 2015",
+    period: "Feb 2013 – Feb 2015",
     location: "Mauritius",
     narrative:
-      "Managed sprints and a team of 7, driving development of a smartcard payment solution. Built the business logic layer that made the whole thing tick.",
+      "Managed sprints and a team of 7, driving development of a smartcard payment solution. Built the business logic layer that made it all work.",
   },
   {
     company: "KnowGo Ltd",
     role: "CEO & Project Manager",
-    period: "Feb 2012 — Jan 2012",
+    period: "Feb 2012 – Jan 2012",
     location: "Ebene, Mauritius",
     narrative:
-      "Co-directed the company and led development of a unique workflow product. Built software that generates web solutions from workflow rules — and engaged with clients across Denmark.",
+      "Co-directed the company and led development of a unique workflow product. Built software that generates web solutions from workflow rules and engaged with clients across Denmark.",
   },
   {
     company: "SWTEAMS Ltd",
     role: "Software Developer",
-    period: "Dec 2006 — Jul 2010",
+    period: "Dec 2006 – Jul 2010",
     location: "Quatre Bornes",
     narrative:
       "Where it all started in industry. Built university applications, electronic business document systems for the EU-funded PEPPOL project, and rule engine modules for internal search. The foundation years.",
@@ -86,7 +86,7 @@ const timeline: TimelineEntry[] = [
   {
     company: "University of Mauritius",
     role: "Programmer & Part-time Tutor",
-    period: "Nov 2005 — Nov 2006",
+    period: "Nov 2005 – Nov 2006",
     narrative:
       "My career's opening chapter. Programmed the I-Learn platform, taught IT to university students, supervised nationwide computer proficiency testing, and trained IC3 trainers for 400,000 Mauritians.",
   },
@@ -99,7 +99,7 @@ const JourneyTimeline = () => {
         <SectionHeader
           label="The Journey"
           title="20 Years of Building"
-          subtitle="From coding in Mauritius to leading AI teams across continents — every chapter shaped who I am."
+          subtitle="From coding in Mauritius to leading AI teams across continents, every chapter shaped who I am."
         />
 
         <div className="relative">

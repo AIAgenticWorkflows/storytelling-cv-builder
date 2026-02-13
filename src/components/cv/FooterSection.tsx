@@ -16,7 +16,7 @@ const FooterSection = () => {
             <span className="text-primary italic">Remarkable</span>
           </h2>
           <p className="font-body text-muted-foreground text-lg mb-8 leading-relaxed">
-            I'm looking for my next chapter — leading product and AI innovation 
+            I'm looking for my next chapter: leading product and AI innovation 
             at a company that believes technology should serve people, not the other way around.
           </p>
 
