@@ -68,6 +68,11 @@ const RecommendationsSection = () => {
   const prev = () =>
     setCurrent((p) => (p - 1 + recommendations.length) % recommendations.length);
 
+  const handleDragEnd = (_: any, info: PanInfo) => {
+    if (info.offset.x < -50) next();
+    else if (info.offset.x > 50) prev();
+  };
+
   const rec = recommendations[current];
 
   return (
