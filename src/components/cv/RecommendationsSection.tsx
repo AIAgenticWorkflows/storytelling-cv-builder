@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useRef } from "react";
+import { motion, AnimatePresence, type PanInfo } from "framer-motion";
 import SectionHeader from "./SectionHeader";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 
@@ -12,16 +12,22 @@ interface Recommendation {
 
 const recommendations: Recommendation[] = [
   {
-    name: "Elias Mwangi",
-    title: "Full Stack Web Developer | 10+ Years in Laravel, PHP, and Real Estate Solutions",
-    relationship: "Nisha was senior to Elias at Ringier South Africa",
-    text: "I had the privilege of working closely with Nisha during her time at Ringier South Africa, where she showcased exceptional talent and adaptability. Starting as a skilled software developer, she quickly grew into the role of Product Manager, demonstrating strong leadership, strategic thinking, and a deep understanding of user needs. Her ability to bridge the gap between technical and business perspectives was instrumental in driving several successful projects. Later, Nisha expanded her expertise into the field of AI, where she excelled at exploring cutting edge technologies and delivering innovative solutions. Her dedication to learning and growth is truly inspiring, and her contributions left a lasting positive impact on our team and the company.",
+    name: "Christian Drejae",
+    title: "CEO @ The EasyCopy Company | Software Sales",
+    relationship: "Christian worked with Nisha at different companies",
+    text: "I've known Nisha for more than 10 years as a dedicated and skillful provider of IT solutions. She has always been appreciated by our customers. She is easy to work with and not afraid to go the extra mile for a job well done.",
   },
   {
     name: "Delphine Racoupeau",
     title: "Head of Product · Solutions at Ringier South Africa",
     relationship: "Worked with Nisha for over 4 years at Ringier",
     text: "I've had the pleasure of working with Nisha for over 4 years at Ringier. She always prioritizes strong relationships with her colleagues, which I believe has been key to the success of the projects she led. I could always rely on her for brainstorming and honest opinions. I've seen her step out of her comfort zone and grow, and it's been truly inspiring to work alongside her.",
+  },
+  {
+    name: "Elias Mwangi",
+    title: "Full Stack Web Developer | 10+ Years in Laravel, PHP, and Real Estate Solutions",
+    relationship: "Nisha was senior to Elias at Ringier South Africa",
+    text: "I had the privilege of working closely with Nisha during her time at Ringier South Africa, where she showcased exceptional talent and adaptability. Starting as a skilled software developer, she quickly grew into the role of Product Manager, demonstrating strong leadership, strategic thinking, and a deep understanding of user needs. Her ability to bridge the gap between technical and business perspectives was instrumental in driving several successful projects. Later, Nisha expanded her expertise into the field of AI, where she excelled at exploring cutting edge technologies and delivering innovative solutions. Her dedication to learning and growth is truly inspiring, and her contributions left a lasting positive impact on our team and the company.",
   },
   {
     name: "Thomas Omweri",
@@ -34,12 +40,6 @@ const recommendations: Recommendation[] = [
     title: "Frontend / UX / Linux / Open Source / GDE",
     relationship: "Nisha was senior to Sandeep at Ringier",
     text: "I've been part of Nisha's team during my time at Ringier and we worked on a major project for the company. Nisha led a team of engineers and designers while managing requirements from users and clients. It has always been a pleasure to work alongside her and I would say her people skills are extremely valuable to have within a tech organization. We often meet in tech events as she's also active in the local communities.",
-  },
-  {
-    name: "Christian Drejae",
-    title: "CEO @ The EasyCopy Company | Software Sales",
-    relationship: "Christian worked with Nisha at different companies",
-    text: "I've known Nisha for more than 10 years as a dedicated and skillful provider of IT solutions. She has always been appreciated by our customers. She is easy to work with and not afraid to go the extra mile for a job well done.",
   },
   {
     name: "Lydie Lambert",
@@ -68,6 +68,11 @@ const RecommendationsSection = () => {
   const prev = () =>
     setCurrent((p) => (p - 1 + recommendations.length) % recommendations.length);
 
+  const handleDragEnd = (_: any, info: PanInfo) => {
+    if (info.offset.x < -50) next();
+    else if (info.offset.x > 50) prev();
+  };
+
   const rec = recommendations[current];
 
   return (
@@ -83,12 +88,16 @@ const RecommendationsSection = () => {
           <AnimatePresence mode="wait">
             <motion.div
               key={current}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.4 }}
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -40 }}
+              transition={{ duration: 0.3 }}
+              drag="x"
+              dragConstraints={{ left: 0, right: 0 }}
+              dragElastic={0.2}
+              onDragEnd={handleDragEnd}
               whileHover={{ scale: 1.01 }}
-              className="bg-quote-bg border border-border/50 rounded-2xl p-6 md:p-12 relative hover:shadow-xl hover:border-primary/20 transition-all duration-300"
+              className="bg-quote-bg border border-border/50 rounded-2xl p-6 md:p-12 relative hover:shadow-xl hover:border-primary/20 transition-all duration-300 cursor-grab active:cursor-grabbing touch-pan-y"
             >
               <Quote className="absolute top-6 left-6 w-10 h-10 text-primary/15" />
               <div className="relative z-10">
