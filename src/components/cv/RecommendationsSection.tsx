@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useRef } from "react";
+import { motion, AnimatePresence, type PanInfo } from "framer-motion";
 import SectionHeader from "./SectionHeader";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 
