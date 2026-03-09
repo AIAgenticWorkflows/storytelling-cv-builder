@@ -6,6 +6,25 @@ import profilePhoto from "@/assets/profile-photo.jfif";
 import CVDocument from "./CVDocument";
 
 const HeroSection = () => {
+  const [generating, setGenerating] = useState(false);
+
+  const handleDownload = async () => {
+    setGenerating(true);
+    try {
+      const blob = await pdf(<CVDocument />).toBlob();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "Nisha_Appanah_CV.pdf";
+      a.click();
+      URL.revokeObjectURL(url);
+    } catch (e) {
+      console.error("PDF generation failed", e);
+    } finally {
+      setGenerating(false);
+    }
+  };
+
   return (
     <section className="relative min-h-[80vh] md:min-h-[90vh] flex items-center justify-center overflow-hidden pt-20 md:pt-24">
       {/* Organic background shapes */}
