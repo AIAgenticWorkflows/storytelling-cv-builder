@@ -125,16 +125,16 @@ const HeroSection = () => {
             transition={{ delay: 1.3, duration: 0.6 }}
             className="mt-6 md:mt-8"
           >
-            <motion.a
-              href="/Nisha_Appanah_CV.pdf"
-              download
+            <motion.button
+              onClick={handleDownload}
+              disabled={generating}
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.97 }}
-              className="inline-flex items-center gap-2 px-5 py-2.5 md:px-6 md:py-3 rounded-full bg-primary text-primary-foreground font-body font-semibold text-sm md:text-base hover:shadow-lg hover:shadow-primary/25 transition-shadow"
+              className="inline-flex items-center gap-2 px-5 py-2.5 md:px-6 md:py-3 rounded-full bg-primary text-primary-foreground font-body font-semibold text-sm md:text-base hover:shadow-lg hover:shadow-primary/25 transition-shadow disabled:opacity-70"
             >
-              <Download className="w-4 h-4" />
-              Download CV
-            </motion.a>
+              {generating ? <Loader2 className="w-4 h-4 animate-spin" /> : <Download className="w-4 h-4" />}
+              {generating ? "Generating..." : "Download CV"}
+            </motion.button>
           </motion.div>
         </motion.div>
 
