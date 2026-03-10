@@ -1,9 +1,6 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { Linkedin, Download, Loader2 } from "lucide-react";
-import { pdf } from "@react-pdf/renderer";
+import { Linkedin } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jfif";
-import CVDocument from "./CVDocument";
 
 const HeroSection = () => {
   const [generating, setGenerating] = useState(false);
