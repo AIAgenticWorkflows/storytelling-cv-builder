@@ -1,30 +1,8 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { Linkedin, Download, Loader2 } from "lucide-react";
-import { pdf } from "@react-pdf/renderer";
+import { Linkedin } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jfif";
-import CVDocument from "./CVDocument";
 
 const HeroSection = () => {
-  const [generating, setGenerating] = useState(false);
-
-  const handleDownload = async () => {
-    setGenerating(true);
-    try {
-      const blob = await pdf(<CVDocument />).toBlob();
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = "Nisha_Appanah_CV.pdf";
-      a.click();
-      URL.revokeObjectURL(url);
-    } catch (e) {
-      console.error("PDF generation failed", e);
-    } finally {
-      setGenerating(false);
-    }
-  };
-
   return (
     <section className="relative min-h-[80vh] md:min-h-[90vh] flex items-center justify-center overflow-hidden pt-20 md:pt-24">
       {/* Organic background shapes */}
@@ -119,23 +97,6 @@ const HeroSection = () => {
             </a>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.3, duration: 0.6 }}
-            className="mt-6 md:mt-8"
-          >
-            <motion.button
-              onClick={handleDownload}
-              disabled={generating}
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.97 }}
-              className="inline-flex items-center gap-2 px-5 py-2.5 md:px-6 md:py-3 rounded-full bg-primary text-primary-foreground font-body font-semibold text-sm md:text-base hover:shadow-lg hover:shadow-primary/25 transition-shadow disabled:opacity-70"
-            >
-              {generating ? <Loader2 className="w-4 h-4 animate-spin" /> : <Download className="w-4 h-4" />}
-              {generating ? "Generating..." : "Download CV"}
-            </motion.button>
-          </motion.div>
         </motion.div>
 
         {/* Scroll indicator - hidden on mobile */}
