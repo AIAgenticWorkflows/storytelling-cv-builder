@@ -49,7 +49,7 @@ const s = StyleSheet.create({
   // Section
   sectionTitle: {
     fontSize: 13,
-    fontWeight: 700,
+    fontFamily: "DMSansBold",
     color: TEAL,
     marginBottom: 8,
     marginTop: 12,
