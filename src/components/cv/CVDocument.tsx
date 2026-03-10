@@ -67,7 +67,7 @@ const s = StyleSheet.create({
 
   // Experience
   expItem: { marginBottom: 10 },
-  expRole: { fontSize: 10, fontWeight: 700, color: DARK },
+  expRole: { fontSize: 10, fontFamily: "DMSansBold", color: DARK },
   expPeriod: { fontSize: 8, color: LIGHT_GRAY, marginBottom: 2 },
   expNarrative: { fontSize: 8.5, color: GRAY, lineHeight: 1.5 },
   expHighlight: { fontSize: 8, color: GRAY, marginLeft: 8, marginTop: 1 },
