@@ -36,8 +36,8 @@ const s = StyleSheet.create({
     alignItems: "flex-start",
   },
   headerLeft: { flex: 1 },
-  name: { fontSize: 22, fontWeight: 700, color: "#ffffff", marginBottom: 4 },
-  quote: { fontSize: 9, fontStyle: "italic", color: "#ffffffcc", maxWidth: 320 },
+  name: { fontSize: 22, fontFamily: "DMSansBold", color: "#ffffff", marginBottom: 4 },
+  quote: { fontSize: 9, color: "#ffffffcc", maxWidth: 320 },
   headerRight: { alignItems: "flex-end", gap: 3 },
   contactText: { fontSize: 8, color: "#ffffffdd" },
 
