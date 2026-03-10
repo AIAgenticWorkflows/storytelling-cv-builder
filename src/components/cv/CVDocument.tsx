@@ -61,7 +61,7 @@ const s = StyleSheet.create({
 
   // Education
   eduItem: { marginBottom: 8 },
-  eduDegree: { fontSize: 10, fontWeight: 700, color: DARK },
+  eduDegree: { fontSize: 10, fontFamily: "DMSansBold", color: DARK },
   eduSchool: { fontSize: 9, color: GRAY },
   eduYears: { fontSize: 8, color: LIGHT_GRAY },
 
