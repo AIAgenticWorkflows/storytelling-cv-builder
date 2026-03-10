@@ -76,8 +76,8 @@ const s = StyleSheet.create({
 
   // Recommendations
   recItem: { marginBottom: 10, backgroundColor: TEAL_LIGHT, padding: 8, borderRadius: 4 },
-  recText: { fontSize: 8, fontStyle: "italic", color: GRAY, lineHeight: 1.5, marginBottom: 4 },
-  recName: { fontSize: 9, fontWeight: 700, color: DARK },
+  recText: { fontSize: 8, color: GRAY, lineHeight: 1.5, marginBottom: 4 },
+  recName: { fontSize: 9, fontFamily: "DMSansBold", color: DARK },
   recTitle: { fontSize: 7.5, color: LIGHT_GRAY },
 
   // Skills
