@@ -10,12 +10,12 @@ import {
 // Register fonts
 Font.register({
   family: "DMSans",
-  fonts: [
-    { src: "https://cdn.jsdelivr.net/fontsource/fonts/dm-sans@latest/latin-400-normal.ttf", fontWeight: 400 },
-    { src: "https://cdn.jsdelivr.net/fontsource/fonts/dm-sans@latest/latin-600-normal.ttf", fontWeight: 600 },
-    { src: "https://cdn.jsdelivr.net/fontsource/fonts/dm-sans@latest/latin-700-normal.ttf", fontWeight: 700 },
-    { src: "https://cdn.jsdelivr.net/fontsource/fonts/dm-sans@latest/latin-400-italic.ttf", fontStyle: "italic", fontWeight: 400 },
-  ],
+  src: "https://cdn.jsdelivr.net/npm/@fontsource/dm-sans@5.0.0/files/dm-sans-latin-400-normal.woff2",
+});
+
+Font.register({
+  family: "DMSansBold",
+  src: "https://cdn.jsdelivr.net/npm/@fontsource/dm-sans@5.0.0/files/dm-sans-latin-700-normal.woff2",
 });
 
 const TEAL = "#1a9e8f";
@@ -36,8 +36,8 @@ const s = StyleSheet.create({
     alignItems: "flex-start",
   },
   headerLeft: { flex: 1 },
-  name: { fontSize: 22, fontWeight: 700, color: "#ffffff", marginBottom: 4 },
-  quote: { fontSize: 9, fontStyle: "italic", color: "#ffffffcc", maxWidth: 320 },
+  name: { fontSize: 22, fontFamily: "DMSansBold", color: "#ffffff", marginBottom: 4 },
+  quote: { fontSize: 9, color: "#ffffffcc", maxWidth: 320 },
   headerRight: { alignItems: "flex-end", gap: 3 },
   contactText: { fontSize: 8, color: "#ffffffdd" },
 
@@ -49,7 +49,7 @@ const s = StyleSheet.create({
   // Section
   sectionTitle: {
     fontSize: 13,
-    fontWeight: 700,
+    fontFamily: "DMSansBold",
     color: TEAL,
     marginBottom: 8,
     marginTop: 12,
@@ -61,13 +61,13 @@ const s = StyleSheet.create({
 
   // Education
   eduItem: { marginBottom: 8 },
-  eduDegree: { fontSize: 10, fontWeight: 700, color: DARK },
+  eduDegree: { fontSize: 10, fontFamily: "DMSansBold", color: DARK },
   eduSchool: { fontSize: 9, color: GRAY },
   eduYears: { fontSize: 8, color: LIGHT_GRAY },
 
   // Experience
   expItem: { marginBottom: 10 },
-  expRole: { fontSize: 10, fontWeight: 700, color: DARK },
+  expRole: { fontSize: 10, fontFamily: "DMSansBold", color: DARK },
   expPeriod: { fontSize: 8, color: LIGHT_GRAY, marginBottom: 2 },
   expNarrative: { fontSize: 8.5, color: GRAY, lineHeight: 1.5 },
   expHighlight: { fontSize: 8, color: GRAY, marginLeft: 8, marginTop: 1 },
@@ -76,13 +76,13 @@ const s = StyleSheet.create({
 
   // Recommendations
   recItem: { marginBottom: 10, backgroundColor: TEAL_LIGHT, padding: 8, borderRadius: 4 },
-  recText: { fontSize: 8, fontStyle: "italic", color: GRAY, lineHeight: 1.5, marginBottom: 4 },
-  recName: { fontSize: 9, fontWeight: 700, color: DARK },
+  recText: { fontSize: 8, color: GRAY, lineHeight: 1.5, marginBottom: 4 },
+  recName: { fontSize: 9, fontFamily: "DMSansBold", color: DARK },
   recTitle: { fontSize: 7.5, color: LIGHT_GRAY },
 
   // Skills
   skillCategory: { marginBottom: 6 },
-  skillLabel: { fontSize: 9, fontWeight: 600, color: DARK, marginBottom: 2 },
+  skillLabel: { fontSize: 9, fontFamily: "DMSansBold", color: DARK, marginBottom: 2 },
   skillTags: { flexDirection: "row", flexWrap: "wrap", gap: 3 },
   skillTag: {
     fontSize: 7.5,
