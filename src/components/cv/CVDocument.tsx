@@ -82,7 +82,7 @@ const s = StyleSheet.create({
 
   // Skills
   skillCategory: { marginBottom: 6 },
-  skillLabel: { fontSize: 9, fontWeight: 600, color: DARK, marginBottom: 2 },
+  skillLabel: { fontSize: 9, fontFamily: "DMSansBold", color: DARK, marginBottom: 2 },
   skillTags: { flexDirection: "row", flexWrap: "wrap", gap: 3 },
   skillTag: {
     fontSize: 7.5,
