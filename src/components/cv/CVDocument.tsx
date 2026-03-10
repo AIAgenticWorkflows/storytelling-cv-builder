@@ -10,12 +10,12 @@ import {
 // Register fonts
 Font.register({
   family: "DMSans",
-  fonts: [
-    { src: "https://cdn.jsdelivr.net/fontsource/fonts/dm-sans@latest/latin-400-normal.ttf", fontWeight: 400 },
-    { src: "https://cdn.jsdelivr.net/fontsource/fonts/dm-sans@latest/latin-600-normal.ttf", fontWeight: 600 },
-    { src: "https://cdn.jsdelivr.net/fontsource/fonts/dm-sans@latest/latin-700-normal.ttf", fontWeight: 700 },
-    { src: "https://cdn.jsdelivr.net/fontsource/fonts/dm-sans@latest/latin-400-italic.ttf", fontStyle: "italic", fontWeight: 400 },
-  ],
+  src: "https://cdn.jsdelivr.net/npm/@fontsource/dm-sans@5.0.0/files/dm-sans-latin-400-normal.woff2",
+});
+
+Font.register({
+  family: "DMSansBold",
+  src: "https://cdn.jsdelivr.net/npm/@fontsource/dm-sans@5.0.0/files/dm-sans-latin-700-normal.woff2",
 });
 
 const TEAL = "#1a9e8f";
