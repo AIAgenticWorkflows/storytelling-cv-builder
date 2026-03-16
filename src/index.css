@@ -57,51 +57,51 @@
   }
 
   .dark {
-    --background: 200 25% 7%;
-    --foreground: 180 15% 92%;
+    --background: 25 18% 8%;
+    --foreground: 35 15% 90%;
 
-    --card: 200 22% 11%;
-    --card-foreground: 180 15% 92%;
+    --card: 25 16% 12%;
+    --card-foreground: 35 15% 90%;
 
-    --popover: 200 22% 11%;
-    --popover-foreground: 180 15% 92%;
+    --popover: 25 16% 12%;
+    --popover-foreground: 35 15% 90%;
 
-    --primary: 175 45% 50%;
-    --primary-foreground: 200 25% 7%;
+    --primary: 18 55% 55%;
+    --primary-foreground: 25 18% 8%;
 
-    --secondary: 200 18% 16%;
-    --secondary-foreground: 180 15% 88%;
+    --secondary: 25 14% 16%;
+    --secondary-foreground: 35 15% 85%;
 
-    --muted: 200 18% 16%;
-    --muted-foreground: 180 12% 55%;
+    --muted: 25 14% 16%;
+    --muted-foreground: 30 10% 55%;
 
-    --accent: 260 30% 18%;
-    --accent-foreground: 260 40% 78%;
+    --accent: 30 25% 18%;
+    --accent-foreground: 35 35% 75%;
 
-    --destructive: 0 62% 30%;
+    --destructive: 0 55% 35%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 200 18% 18%;
-    --input: 200 18% 18%;
-    --ring: 175 45% 50%;
+    --border: 25 14% 18%;
+    --input: 25 14% 18%;
+    --ring: 18 55% 55%;
 
-    --sidebar-background: 200 22% 9%;
-    --sidebar-foreground: 180 15% 90%;
-    --sidebar-primary: 175 45% 50%;
-    --sidebar-primary-foreground: 200 25% 7%;
-    --sidebar-accent: 200 18% 14%;
-    --sidebar-accent-foreground: 180 15% 90%;
-    --sidebar-border: 200 18% 18%;
-    --sidebar-ring: 175 45% 50%;
+    --sidebar-background: 25 16% 10%;
+    --sidebar-foreground: 35 15% 88%;
+    --sidebar-primary: 18 55% 55%;
+    --sidebar-primary-foreground: 25 18% 8%;
+    --sidebar-accent: 25 14% 14%;
+    --sidebar-accent-foreground: 35 15% 88%;
+    --sidebar-border: 25 14% 18%;
+    --sidebar-ring: 18 55% 55%;
 
-    --warm-glow: 200 20% 12%;
-    --warm-highlight: 175 45% 50%;
-    --warm-deep: 180 15% 88%;
-    --warm-sand: 200 18% 16%;
-    --timeline-line: 200 18% 28%;
-    --timeline-dot: 175 45% 50%;
-    --quote-bg: 200 18% 12%;
-    --quote-border: 175 40% 45%;
+    --warm-glow: 25 16% 12%;
+    --warm-highlight: 18 55% 55%;
+    --warm-deep: 35 15% 86%;
+    --warm-sand: 25 14% 16%;
+    --timeline-line: 25 14% 28%;
+    --timeline-dot: 18 55% 55%;
+    --quote-bg: 25 14% 12%;
+    --quote-border: 18 45% 48%;
   }
 }
 @layer base {

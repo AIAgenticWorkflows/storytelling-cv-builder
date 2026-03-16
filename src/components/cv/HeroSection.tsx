@@ -23,20 +23,17 @@ const HeroSection = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.1, duration: 0.6 }}
-            className="mb-6 relative inline-block"
+            className="mb-8 relative inline-block"
           >
-            {/* Decorative rings and glow behind photo */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="absolute w-36 h-36 md:w-56 md:h-56 rounded-full border-2 border-primary/15 animate-[spin_20s_linear_infinite]" />
-              <div className="absolute w-40 h-40 md:w-60 md:h-60 rounded-full border border-dashed border-accent/20 animate-[spin_30s_linear_infinite_reverse]" />
-              <div className="absolute w-32 h-32 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-primary/15 via-accent/10 to-primary/5 blur-xl" />
-              <div className="absolute w-28 h-28 md:w-44 md:h-44 rounded-full bg-gradient-to-tr from-accent/10 to-primary/15 blur-lg" />
-            </div>
+            {/* Soft warm glow behind photo */}
+            <div className="absolute -inset-8 md:-inset-12 rounded-full bg-accent/40 blur-2xl" />
+            <div className="absolute -inset-4 md:-inset-6 rounded-full bg-secondary/60 blur-lg" />
             <motion.img
               src={profilePhoto}
               alt="Nisha Appanah"
-              whileHover={{ scale: 1.05 }}
-              className="relative w-24 h-24 md:w-40 md:h-40 rounded-full mx-auto object-cover border-4 border-background shadow-2xl shadow-primary/25 ring-[3px] ring-primary/30 ring-offset-2 ring-offset-background"
+              whileHover={{ scale: 1.03 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="relative w-28 h-28 md:w-44 md:h-44 rounded-full mx-auto object-cover border-[5px] border-card shadow-xl"
             />
           </motion.div>
 
