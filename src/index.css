@@ -6,54 +6,54 @@
 
 @layer base {
   :root {
-    --background: 220 20% 98%;
-    --foreground: 222 30% 12%;
+    --background: 180 30% 97%;
+    --foreground: 200 25% 18%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222 30% 12%;
+    --card-foreground: 200 25% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 30% 12%;
+    --popover-foreground: 200 25% 18%;
 
-    --primary: 222 65% 50%;
+    --primary: 175 40% 42%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 20% 93%;
-    --secondary-foreground: 222 25% 22%;
+    --secondary: 180 25% 92%;
+    --secondary-foreground: 200 20% 25%;
 
-    --muted: 220 15% 94%;
-    --muted-foreground: 222 12% 42%;
+    --muted: 180 15% 94%;
+    --muted-foreground: 200 12% 45%;
 
-    --accent: 200 70% 92%;
-    --accent-foreground: 222 65% 40%;
+    --accent: 260 30% 92%;
+    --accent-foreground: 200 30% 35%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 18% 88%;
-    --input: 220 18% 88%;
-    --ring: 222 65% 50%;
+    --border: 180 18% 88%;
+    --input: 180 18% 88%;
+    --ring: 175 40% 42%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 220 18% 96%;
-    --sidebar-foreground: 222 30% 12%;
-    --sidebar-primary: 222 65% 50%;
+    --sidebar-background: 180 18% 96%;
+    --sidebar-foreground: 200 25% 18%;
+    --sidebar-primary: 175 40% 42%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 20% 93%;
-    --sidebar-accent-foreground: 222 25% 22%;
-    --sidebar-border: 220 18% 88%;
-    --sidebar-ring: 222 65% 50%;
+    --sidebar-accent: 180 20% 93%;
+    --sidebar-accent-foreground: 200 20% 25%;
+    --sidebar-border: 180 18% 88%;
+    --sidebar-ring: 175 40% 42%;
 
     /* Custom CV tokens */
-    --warm-glow: 220 20% 96%;
-    --warm-highlight: 222 65% 55%;
-    --warm-deep: 222 30% 15%;
-    --warm-sand: 220 15% 92%;
-    --timeline-line: 222 30% 82%;
-    --timeline-dot: 222 65% 50%;
-    --quote-bg: 220 25% 96%;
-    --quote-border: 222 60% 55%;
+    --warm-glow: 180 20% 95%;
+    --warm-highlight: 175 40% 48%;
+    --warm-deep: 200 25% 20%;
+    --warm-sand: 260 20% 94%;
+    --timeline-line: 175 25% 80%;
+    --timeline-dot: 175 40% 42%;
+    --quote-bg: 260 25% 96%;
+    --quote-border: 175 35% 48%;
   }
 
   .dark {
