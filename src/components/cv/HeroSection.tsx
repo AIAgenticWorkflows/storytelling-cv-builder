@@ -25,18 +25,18 @@ const HeroSection = () => {
             transition={{ delay: 0.1, duration: 0.6 }}
             className="mb-6 relative inline-block"
           >
-            {/* Decorative banner behind photo */}
-            <div className="absolute -inset-6 md:-inset-10">
-              <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-primary/20 via-accent/25 to-primary/10 rotate-3 scale-105" />
-              <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-tl from-accent/20 via-primary/15 to-transparent -rotate-2 scale-110" />
-              <div className="absolute -top-4 -right-4 w-16 h-16 md:w-24 md:h-24 rounded-full bg-primary/10 blur-xl" />
-              <div className="absolute -bottom-3 -left-3 w-12 h-12 md:w-20 md:h-20 rounded-full bg-accent/15 blur-lg" />
+            {/* Decorative rings and glow behind photo */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="absolute w-36 h-36 md:w-56 md:h-56 rounded-full border-2 border-primary/15 animate-[spin_20s_linear_infinite]" />
+              <div className="absolute w-40 h-40 md:w-60 md:h-60 rounded-full border border-dashed border-accent/20 animate-[spin_30s_linear_infinite_reverse]" />
+              <div className="absolute w-32 h-32 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-primary/15 via-accent/10 to-primary/5 blur-xl" />
+              <div className="absolute w-28 h-28 md:w-44 md:h-44 rounded-full bg-gradient-to-tr from-accent/10 to-primary/15 blur-lg" />
             </div>
             <motion.img
               src={profilePhoto}
               alt="Nisha Appanah"
               whileHover={{ scale: 1.05 }}
-              className="relative w-24 h-24 md:w-40 md:h-40 rounded-full mx-auto object-cover border-[3px] border-background shadow-xl shadow-primary/15 ring-2 ring-primary/20"
+              className="relative w-24 h-24 md:w-40 md:h-40 rounded-full mx-auto object-cover border-4 border-background shadow-2xl shadow-primary/25 ring-[3px] ring-primary/30 ring-offset-2 ring-offset-background"
             />
           </motion.div>
 
