@@ -82,8 +82,8 @@ const HeroSection = () => {
             className="font-body text-sm md:text-lg text-muted-foreground max-w-2xl mx-auto mb-6 md:mb-10 leading-relaxed px-2"
           >
             I'm a technology leader who turns complex challenges into practical solutions. 
-            With two decades of building products, leading teams, and driving AI innovation 
-            across continents, I thrive where technology meets real human impact.
+            With two decades of building products and leading teams, 
+            I thrive where technology meets real human impact.
           </motion.p>
 
           <motion.div
