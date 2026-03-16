@@ -32,7 +32,7 @@ const timeline: TimelineEntry[] = [
     role: "Product Manager, AI Team",
     period: "Jun 2024 – Oct 2024",
     narrative:
-      "Pitched Ally Agent, an AI-powered solution matching property seekers to listings. Took it from concept to the next approval stage, blending product instinct with generative AI.",
+      "Pitched Ally Agent, an AI-powered solution matching property seekers to listings. Took it from concept to the next approval stage.",
     accent: true,
   },
   {
