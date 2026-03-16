@@ -40,7 +40,7 @@ const timeline: TimelineEntry[] = [
     role: "Product Manager, Property Marketplace",
     period: "Jul 2019 – Oct 2024",
     narrative:
-      "Five years steering a 17-member cross-functional team through the most ambitious transformation the marketplace had seen. I partnered with CEOs, owned the roadmap, and led two major platform migrations while keeping revenue growing.",
+      "Three years steering a cross-functional team that grew from 7 to 17 members through the most ambitious transformation the marketplace had seen. I partnered with CEOs, owned the roadmap, and led two major platform migrations while keeping revenue growing.",
     highlights: [
       "Led 2 major platform migrations with zero business disruption",
       "Collaborated across multiple international markets",
