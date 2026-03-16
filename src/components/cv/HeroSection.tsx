@@ -25,7 +25,13 @@ const HeroSection = () => {
             transition={{ delay: 0.1, duration: 0.6 }}
             className="mb-6 relative inline-block"
           >
-            <div className="absolute -inset-2 rounded-full bg-gradient-to-br from-primary/30 via-accent/20 to-primary/10 blur-md" />
+            {/* Decorative banner behind photo */}
+            <div className="absolute -inset-6 md:-inset-10">
+              <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-primary/20 via-accent/25 to-primary/10 rotate-3 scale-105" />
+              <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-tl from-accent/20 via-primary/15 to-transparent -rotate-2 scale-110" />
+              <div className="absolute -top-4 -right-4 w-16 h-16 md:w-24 md:h-24 rounded-full bg-primary/10 blur-xl" />
+              <div className="absolute -bottom-3 -left-3 w-12 h-12 md:w-20 md:h-20 rounded-full bg-accent/15 blur-lg" />
+            </div>
             <motion.img
               src={profilePhoto}
               alt="Nisha Appanah"
