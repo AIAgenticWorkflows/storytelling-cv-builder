@@ -9,7 +9,7 @@ const selectedImpact = [
   },
   {
     icon: Rocket,
-    text: "Pitched Ally Agent to executive leadership — secured approval to advance to next stage",
+    text: "Pitched Ally Agent to executive leadership, secured approval to advance to next stage",
   },
   {
     icon: Mic,
