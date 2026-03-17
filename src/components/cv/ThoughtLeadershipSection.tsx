@@ -18,7 +18,7 @@ const talks: Talk[] = [
     year: "2024",
     url: "https://conference.mscc.mu/agenda/875424",
     description:
-      "Broke down the architecture behind autonomous AI agents — covering reasoning loops, tool use, and real-world implementation patterns for teams looking to move beyond chatbots.",
+      "Broke down the architecture behind autonomous AI agents, covering reasoning loops, tool use, and real-world implementation patterns for teams looking to move beyond chatbots.",
   },
   {
     title: "Navigating the AI Landscape",
