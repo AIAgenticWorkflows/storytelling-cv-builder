@@ -35,7 +35,7 @@ const talks: Talk[] = [
     url: "https://www.youtube.com/watch?v=QHnxsfYhUtk",
     videoEmbed: "https://www.youtube.com/embed/QHnxsfYhUtk",
     description:
-      "A hands-on live demo building and programming a robot from scratch — bridging hardware and software to inspire the next generation of technologists.",
+      "A hands-on live demo building and programming a robot from scratch, bridging hardware and software to inspire the next generation of technologists.",
   },
   {
     title: "How to Program a Robot Arm",
