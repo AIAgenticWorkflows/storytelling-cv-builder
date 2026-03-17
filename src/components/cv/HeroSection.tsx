@@ -21,7 +21,7 @@ const selectedImpact = [
   },
   {
     icon: Zap,
-    text: "Founded Aplica — helping businesses unlock growth through practical AI solutions",
+    text: "Founded Aplica, helping businesses unlock growth through practical AI solutions",
   },
 ];
 
