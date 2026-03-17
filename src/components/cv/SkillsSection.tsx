@@ -55,7 +55,7 @@ const SkillsSection = () => {
         <SectionHeader
           label="Strategic Capabilities"
           title="What I Bring to the Table"
-          subtitle="Not just skills — the strategic capabilities that drive outcomes."
+          subtitle="Not just skills, the strategic capabilities that drive outcomes."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-10 md:mb-16">

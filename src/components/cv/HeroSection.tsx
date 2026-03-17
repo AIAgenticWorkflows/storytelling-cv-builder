@@ -87,7 +87,7 @@ const HeroSection = () => {
               transition={{ delay: 0.55, duration: 0.6 }}
               className="font-body text-muted-foreground text-sm md:text-base max-w-xl leading-relaxed mb-6"
             >
-              20 years building, shipping, and leading — from code to product strategy to AI.
+              20 years building, shipping, and leading: from code to product strategy to AI.
               I've migrated platforms without breaking revenue, scaled teams across continents,
               and now I help businesses make AI work in the real world.
             </motion.p>

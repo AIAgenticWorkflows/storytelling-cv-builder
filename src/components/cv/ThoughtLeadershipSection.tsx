@@ -43,7 +43,7 @@ const talks: Talk[] = [
     year: "2019",
     url: "https://2019.mscc.mu/session/98226",
     description:
-      "Deep dive into robotics programming — control systems, sensor integration, and the intersection of physical and digital engineering.",
+      "Deep dive into robotics programming: control systems, sensor integration, and the intersection of physical and digital engineering.",
   },
 ];
 
