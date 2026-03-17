@@ -36,7 +36,7 @@ const timeline: TimelineEntry[] = [
     role: "Product Manager, AI Team",
     period: "Jun 2024 – Oct 2024",
     impact:
-      "Pitched and secured executive buy-in for Ally Agent — an AI-powered solution matching property seekers to listings. Took it from concept through business case to the next approval stage.",
+      "Pitched and secured executive buy-in for Ally Agent, an AI-powered solution matching property seekers to listings. Took it from concept through business case to the next approval stage.",
     outcomes: [
       "Pitched directly to C-suite and secured green light to advance",
       "Designed the product vision, user flows, and go-to-market approach",
