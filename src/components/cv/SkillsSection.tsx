@@ -2,26 +2,42 @@ import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader";
 import { Brain, Layers, Users, Globe, Award, Sparkles } from "lucide-react";
 
-const skillCategories = [
+const capabilities = [
   {
     icon: Brain,
-    label: "AI & Innovation",
-    skills: ["AI Agents", "Generative AI", "Vibe Coding", "Agentic AI", "AI Strategy"],
+    label: "AI Strategy & Implementation",
+    items: [
+      "Evaluating where AI creates real value vs. hype",
+      "Designing AI agent architectures for business use cases",
+      "Generative AI product design & go-to-market",
+    ],
   },
   {
     icon: Layers,
-    label: "Product & Strategy",
-    skills: ["Product Roadmap", "Platform Migration", "Online Marketplace", "Product Development", "Vision & Metrics"],
+    label: "Product Leadership",
+    items: [
+      "Roadmap ownership from vision through execution",
+      "Platform migrations without revenue disruption",
+      "Marketplace growth strategy & pricing",
+    ],
   },
   {
     icon: Users,
-    label: "Leadership",
-    skills: ["Cross-functional Teams", "CEO Partnership", "Sprint Planning", "Scrum", "Stakeholder Management"],
+    label: "Team & Stakeholder Leadership",
+    items: [
+      "Scaling cross-functional teams (7→17) through growth phases",
+      "C-suite partnership on strategy & investment decisions",
+      "Cross-market coordination across 5+ countries",
+    ],
   },
   {
     icon: Globe,
-    label: "Global Reach",
-    skills: ["Multi-market Deployment", "5 African Countries", "Denmark", "Mauritius", "International Ecosystems"],
+    label: "Technical Foundations",
+    items: [
+      "Full-stack architecture & system design",
+      "Multi-market deployment & internationalisation",
+      "Data-driven decision making & experimentation",
+    ],
   },
 ];
 
@@ -34,47 +50,40 @@ const certifications = [
 
 const SkillsSection = () => {
   return (
-    <section className="py-12 md:py-24 px-4 md:px-6 bg-warm-glow" id="skills">
+    <section className="py-12 md:py-24 px-4 md:px-6" id="skills">
       <div className="container mx-auto max-w-5xl">
         <SectionHeader
-          label="Expertise"
-          title="What I Bring"
-          subtitle="A rare blend of deep technical roots, product leadership, and AI-forward thinking."
+          label="Strategic Capabilities"
+          title="What I Bring to the Table"
+          subtitle="Not just skills — the strategic capabilities that drive outcomes."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-10 md:mb-16">
-          {skillCategories.map((cat, i) => (
+          {capabilities.map((cap, i) => (
             <motion.div
-              key={cat.label}
+              key={cap.label}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              whileHover={{ scale: 1.03, y: -4 }}
-              className="bg-background rounded-xl p-4 md:p-6 border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-xl group cursor-default"
+              className="bg-card rounded-xl p-5 md:p-6 border border-border/50 hover:border-primary/20 transition-all duration-300 hover:shadow-lg"
             >
               <div className="flex items-center gap-3 mb-4">
-                <motion.div
-                  whileHover={{ rotate: 12 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                  className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors"
-                >
-                  <cat.icon className="w-5 h-5 text-primary" />
-                </motion.div>
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <cap.icon className="w-5 h-5 text-primary" />
+                </div>
                 <h3 className="font-display text-lg font-semibold text-foreground">
-                  {cat.label}
+                  {cap.label}
                 </h3>
               </div>
-              <div className="flex flex-wrap gap-2">
-                {cat.skills.map((skill) => (
-                  <span
-                    key={skill}
-                    className="text-sm font-body px-3 py-1 rounded-full bg-secondary text-secondary-foreground hover:bg-primary/10 hover:text-primary transition-colors duration-200 cursor-default"
-                  >
-                    {skill}
-                  </span>
+              <ul className="space-y-2">
+                {cap.items.map((item, j) => (
+                  <li key={j} className="flex items-start gap-2 text-sm font-body text-foreground/80">
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0 mt-1.5" />
+                    {item}
+                  </li>
                 ))}
-              </div>
+              </ul>
             </motion.div>
           ))}
         </div>

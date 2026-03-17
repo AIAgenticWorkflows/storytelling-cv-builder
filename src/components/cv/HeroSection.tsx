@@ -1,121 +1,147 @@
 import { motion } from "framer-motion";
-import { Linkedin } from "lucide-react";
+import { Linkedin, ArrowDown, Zap, TrendingUp, Users, Mic, Rocket } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jfif";
+
+const selectedImpact = [
+  {
+    icon: TrendingUp,
+    text: "Led 2 major platform migrations across 4 markets with zero revenue disruption",
+  },
+  {
+    icon: Rocket,
+    text: "Pitched Ally Agent to executive leadership — secured approval to advance to next stage",
+  },
+  {
+    icon: Mic,
+    text: "Conference speaker on AI agents, robotics & implementation strategy",
+  },
+  {
+    icon: Users,
+    text: "Scaled a cross-functional team from 7 to 17 while delivering on an ambitious transformation roadmap",
+  },
+  {
+    icon: Zap,
+    text: "Founded Aplica — helping businesses unlock growth through practical AI solutions",
+  },
+];
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[80vh] md:min-h-[90vh] flex items-center justify-center overflow-hidden pt-20 md:pt-24">
-      {/* Organic background shapes */}
+    <section className="relative min-h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-24">
+      {/* Subtle background shapes */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 rounded-full bg-primary/5 blur-3xl" />
         <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-accent/5 blur-3xl" />
-        <div className="absolute top-1/2 left-1/3 w-64 h-64 rounded-full bg-warm-highlight/5 blur-3xl" />
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 relative z-10 max-w-4xl">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-center"
-        >
+      <div className="container mx-auto px-4 md:px-6 relative z-10 max-w-5xl">
+        <div className="grid md:grid-cols-[auto_1fr] gap-8 md:gap-12 items-center">
+          {/* Left: Photo */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.1, duration: 0.6 }}
-            className="mb-8 relative inline-block"
+            className="flex justify-center md:justify-start"
           >
-            {/* Soft warm glow behind photo */}
-            <div className="absolute -inset-8 md:-inset-12 rounded-full bg-accent/40 blur-2xl" />
-            <div className="absolute -inset-4 md:-inset-6 rounded-full bg-secondary/60 blur-lg" />
-            <motion.img
-              src={profilePhoto}
-              alt="Nisha Appanah"
-              whileHover={{ scale: 1.03 }}
-              transition={{ type: "spring", stiffness: 300 }}
-              className="relative w-28 h-28 md:w-44 md:h-44 rounded-full mx-auto object-cover border-[5px] border-card shadow-xl"
-            />
+            <div className="relative">
+              <div className="absolute -inset-6 rounded-full bg-accent/30 blur-2xl" />
+              <div className="absolute -inset-3 rounded-full bg-secondary/50 blur-lg" />
+              <motion.img
+                src={profilePhoto}
+                alt="Nisha Appanah"
+                whileHover={{ scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="relative w-32 h-32 md:w-44 md:h-44 rounded-full object-cover border-4 border-card shadow-2xl"
+              />
+            </div>
           </motion.div>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            className="text-muted-foreground font-body text-base md:text-lg tracking-widest uppercase mb-3 md:mb-4"
-          >
-            Hello, I'm
-          </motion.p>
-
-          <motion.h1
+          {/* Right: Positioning */}
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-            className="font-display text-3xl sm:text-5xl md:text-8xl font-bold text-foreground mb-3 md:mb-6 leading-tight"
+            transition={{ duration: 0.7 }}
+            className="text-center md:text-left"
           >
-            Nisha{" "}
-            <span className="text-primary italic">Appanah</span>
-          </motion.h1>
-
-          <motion.div
-            initial={{ scaleX: 0 }}
-            animate={{ scaleX: 1 }}
-            transition={{ delay: 0.6, duration: 0.6 }}
-            className="w-16 md:w-24 h-1 bg-primary mx-auto mb-6 md:mb-8 rounded-full"
-          />
-
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7, duration: 0.6 }}
-            className="font-display text-base md:text-2xl text-muted-foreground mb-3 md:mb-6 italic px-2"
-          >
-            20-Year Tech Leader · Product, Software & AI Strategy
-          </motion.p>
-
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.9, duration: 0.6 }}
-            className="font-body text-sm md:text-lg text-muted-foreground max-w-2xl mx-auto mb-6 md:mb-10 leading-relaxed px-2"
-          >
-            I'm a technology leader who turns complex challenges into practical solutions. 
-            With two decades of building products and leading teams, 
-            I thrive where technology meets real human impact.
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.1, duration: 0.6 }}
-            className="flex flex-wrap items-center justify-center gap-4 md:gap-6 text-muted-foreground"
-          >
-            <a
-              href="https://www.linkedin.com/in/nishaappanah/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:text-primary transition-colors duration-300 font-body"
+            <motion.h1
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.7 }}
+              className="font-display text-3xl sm:text-5xl md:text-6xl font-bold text-foreground mb-3 leading-tight"
             >
-              <Linkedin className="w-4 h-4" />
-              <span>LinkedIn</span>
-            </a>
+              Nisha <span className="text-primary italic">Appanah</span>
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+              className="font-display text-lg md:text-2xl text-primary mb-4 italic"
+            >
+              I turn complex technology into products people actually use.
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.55, duration: 0.6 }}
+              className="font-body text-muted-foreground text-sm md:text-base max-w-xl leading-relaxed mb-6"
+            >
+              20 years building, shipping, and leading — from code to product strategy to AI.
+              I've migrated platforms without breaking revenue, scaled teams across continents,
+              and now I help businesses make AI work in the real world.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.7, duration: 0.5 }}
+              className="flex flex-wrap items-center justify-center md:justify-start gap-4"
+            >
+              <a
+                href="https://www.linkedin.com/in/nishaappanah/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-primary-foreground font-body text-sm font-medium hover:bg-primary/90 transition-colors"
+              >
+                <Linkedin className="w-4 h-4" />
+                Connect on LinkedIn
+              </a>
+              <a
+                href="#journey"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-border text-foreground font-body text-sm font-medium hover:border-primary/40 hover:bg-primary/5 transition-colors"
+              >
+                <ArrowDown className="w-4 h-4" />
+                See my journey
+              </a>
+            </motion.div>
           </motion.div>
+        </div>
 
-        </motion.div>
-
-        {/* Scroll indicator - hidden on mobile */}
+        {/* Selected Impact */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-          className="hidden md:block absolute bottom-8 left-1/2 -translate-x-1/2"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.9, duration: 0.7 }}
+          className="mt-12 md:mt-16"
         >
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-            className="w-6 h-10 border-2 border-muted-foreground/30 rounded-full flex justify-center pt-2"
-          >
-            <div className="w-1.5 h-1.5 bg-primary rounded-full" />
-          </motion.div>
+          <p className="text-primary font-body text-xs tracking-widest uppercase mb-4 text-center md:text-left font-semibold">
+            Selected Impact
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {selectedImpact.map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1 + i * 0.08, duration: 0.4 }}
+                className="flex items-start gap-3 p-3 rounded-lg bg-card border border-border/50 hover:border-primary/20 transition-colors"
+              >
+                <item.icon className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                <p className="font-body text-sm text-foreground leading-snug">{item.text}</p>
+              </motion.div>
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>
