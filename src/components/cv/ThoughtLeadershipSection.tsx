@@ -18,7 +18,7 @@ const talks: Talk[] = [
     year: "2024",
     url: "https://conference.mscc.mu/agenda/875424",
     description:
-      "Broke down the architecture behind autonomous AI agents — covering reasoning loops, tool use, and real-world implementation patterns for teams looking to move beyond chatbots.",
+      "Broke down the architecture behind autonomous AI agents, covering reasoning loops, tool use, and real-world implementation patterns for teams looking to move beyond chatbots.",
   },
   {
     title: "Navigating the AI Landscape",
@@ -26,7 +26,7 @@ const talks: Talk[] = [
     year: "2023",
     url: "https://2023.mscc.mu/agenda/455578",
     description:
-      "A strategic overview for product leaders and developers on where AI creates real value versus hype — frameworks for evaluating AI opportunities in existing products.",
+      "A strategic overview for product leaders and developers on where AI creates real value versus hype. Frameworks for evaluating AI opportunities in existing products.",
   },
   {
     title: "Build and Program an Interactive Robot",
@@ -35,7 +35,7 @@ const talks: Talk[] = [
     url: "https://www.youtube.com/watch?v=QHnxsfYhUtk",
     videoEmbed: "https://www.youtube.com/embed/QHnxsfYhUtk",
     description:
-      "A hands-on live demo building and programming a robot from scratch — bridging hardware and software to inspire the next generation of technologists.",
+      "A hands-on live demo building and programming a robot from scratch, bridging hardware and software to inspire the next generation of technologists.",
   },
   {
     title: "How to Program a Robot Arm",
@@ -43,7 +43,7 @@ const talks: Talk[] = [
     year: "2019",
     url: "https://2019.mscc.mu/session/98226",
     description:
-      "Deep dive into robotics programming — control systems, sensor integration, and the intersection of physical and digital engineering.",
+      "Deep dive into robotics programming: control systems, sensor integration, and the intersection of physical and digital engineering.",
   },
 ];
 
