@@ -15,7 +15,7 @@ const talks: Talk[] = [
   {
     title: "Exploring AI Agents: From Fundamentals to Implementation",
     event: "MSCC Conference 2024",
-    year: "2024",
+    year: "2025",
     url: "https://conference.mscc.mu/agenda/875424",
     description:
       "Broke down the architecture behind autonomous AI agents, covering reasoning loops, tool use, and real-world implementation patterns for teams looking to move beyond chatbots.",
