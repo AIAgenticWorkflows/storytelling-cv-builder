@@ -39,7 +39,7 @@ const timeline: TimelineEntry[] = [
       "Pitched and secured executive buy-in for Ally Agent, an AI-powered solution matching property seekers to listings. Took it from concept through business case to the next approval stage.",
     outcomes: [
       "Pitched directly to C-suite and secured green light to advance",
-      "Designed the product vision, user flows, and go-to-market approach",
+      "Conducted user interviews, secured early sign-ups and validated genuine interest across Romania, Kenya, and Slovakia",
     ],
     accent: true,
   },
@@ -48,7 +48,7 @@ const timeline: TimelineEntry[] = [
     role: "Product Manager, Property Marketplace",
     period: "Jul 2019 – Oct 2024",
     impact:
-      "Owned the product roadmap for the most ambitious transformation the marketplace had seen. Partnered directly with CEOs, led two major platform migrations across 4 international markets, and grew revenue while scaling the team.",
+      "Owned the product roadmap for the most ambitious project of the company. Partnered directly with CEOs, led two major platform migrations across 4 international markets, and grew revenue while scaling the team.",
     outcomes: [
       "Led 2 platform migrations across 4 markets with zero business disruption",
       "Scaled team from 7 to 17 while delivering on an aggressive roadmap",
@@ -99,7 +99,7 @@ const timeline: TimelineEntry[] = [
       "Managed a team of 7, driving development of a smartcard payment solution. Built the core business logic layer and ran sprints end-to-end.",
     outcomes: [
       "Delivered the business logic layer underpinning the payment system",
-      "Full sprint ownership from planning to release",
+      "Full sprint ownership from planning to release, including demos to stakeholders to show progress",
     ],
   },
   {
@@ -127,7 +127,7 @@ const timeline: TimelineEntry[] = [
     role: "Programmer & Part-time Tutor",
     period: "Nov 2005 – Nov 2006",
     impact:
-      "Programmed the I-Learn platform, taught IT to university students, and supervised nationwide computer proficiency testing for 400,000 Mauritians.",
+      "Programmed the I-Learn platform, taught IT to university students, and was in charge of training the Internet and Computing Core Certification (IC3) trainers of 400,000 Mauritians.",
   },
 ];
 

@@ -14,11 +14,11 @@ interface Talk {
 const talks: Talk[] = [
   {
     title: "Exploring AI Agents: From Fundamentals to Implementation",
-    event: "MSCC Conference 2024",
+    event: "MSCC Conference 2025",
     year: "2025",
     url: "https://conference.mscc.mu/agenda/875424",
     description:
-      "Broke down the architecture behind autonomous AI agents, covering reasoning loops, tool use, and real-world implementation patterns for teams looking to move beyond chatbots.",
+      "Introducing the fundamentals of AI agents using N8N, showing how they operate and demoing a production use case.",
   },
   {
     title: "Navigating the AI Landscape",
@@ -26,7 +26,7 @@ const talks: Talk[] = [
     year: "2023",
     url: "https://2023.mscc.mu/agenda/455578",
     description:
-      "A strategic overview for product leaders and developers on where AI creates real value versus hype. Frameworks for evaluating AI opportunities in existing products.",
+      "Drawing from our own journey, we shared the knowledge we acquired through our interaction with the OpenAI API and running large language models locally.",
   },
   {
     title: "Build and Program an Interactive Robot",
@@ -68,7 +68,7 @@ const ThoughtLeadershipSection = () => {
               className="bg-background rounded-xl border border-border/50 overflow-hidden hover:border-primary/20 hover:shadow-lg transition-all duration-300"
             >
               {talk.videoEmbed && (
-                <div className="aspect-video w-full bg-foreground/5">
+                <div className="aspect-video w-full md:w-1/2 bg-foreground/5">
                   <iframe
                     src={talk.videoEmbed}
                     title={talk.title}
