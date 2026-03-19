@@ -76,7 +76,7 @@ const RecommendationsSection = () => {
   const rec = recommendations[current];
 
   return (
-    <section className="py-12 md:py-24 px-4 md:px-6" id="recommendations">
+    <section className="py-12 md:py-24 px-4 md:px-6 bg-warm-glow" id="recommendations">
       <div className="container mx-auto max-w-4xl">
         <SectionHeader
           label="What People Say"
