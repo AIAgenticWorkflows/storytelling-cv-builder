@@ -4,15 +4,6 @@ import { Brain, Layers, Users, Globe, Award, Sparkles } from "lucide-react";
 
 const capabilities = [
   {
-    icon: Brain,
-    label: "AI Strategy & Implementation",
-    items: [
-      "Evaluating where AI creates real value vs. hype",
-      "Designing AI agent architectures for business use cases",
-      "Generative AI product design & go-to-market",
-    ],
-  },
-  {
     icon: Layers,
     label: "Product Leadership",
     items: [

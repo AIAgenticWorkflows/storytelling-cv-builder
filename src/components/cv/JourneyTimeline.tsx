@@ -127,7 +127,7 @@ const timeline: TimelineEntry[] = [
     role: "Programmer & Part-time Tutor",
     period: "Nov 2005 – Nov 2006",
     impact:
-      "Programmed the I-Learn platform, taught IT to university students, and supervised nationwide computer proficiency testing for 400,000 Mauritians.",
+      "Programmed the I-Learn platform, taught IT to university students, and was in charge of training the Internet and Computing Core Certification (IC3) trainers of 400,000 Mauritians.",
   },
 ];
 

@@ -68,7 +68,7 @@ const ThoughtLeadershipSection = () => {
               className="bg-background rounded-xl border border-border/50 overflow-hidden hover:border-primary/20 hover:shadow-lg transition-all duration-300"
             >
               {talk.videoEmbed && (
-                <div className="aspect-video w-full bg-foreground/5">
+                <div className="aspect-video w-full md:w-1/2 bg-foreground/5">
                   <iframe
                     src={talk.videoEmbed}
                     title={talk.title}
