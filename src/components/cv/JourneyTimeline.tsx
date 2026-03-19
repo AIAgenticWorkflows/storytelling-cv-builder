@@ -99,7 +99,7 @@ const timeline: TimelineEntry[] = [
       "Managed a team of 7, driving development of a smartcard payment solution. Built the core business logic layer and ran sprints end-to-end.",
     outcomes: [
       "Delivered the business logic layer underpinning the payment system",
-      "Full sprint ownership from planning to release",
+      "Full sprint ownership from planning to release, including demos to stakeholders to show progress",
     ],
   },
   {
