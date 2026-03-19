@@ -171,7 +171,7 @@ const JourneyTimeline = () => {
                   <div
                     className={`p-4 md:p-6 rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-primary/30 cursor-default ${
                       entry.accent
-                        ? "bg-primary/5 border border-primary/15"
+                        ? "bg-primary/5 border border-primary/15 border-l-4 border-l-primary/40"
                         : "bg-card border border-border/50"
                     }`}
                   >
