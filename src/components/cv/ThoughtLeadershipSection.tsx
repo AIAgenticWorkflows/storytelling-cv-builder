@@ -4,7 +4,6 @@ import SectionHeader from "./SectionHeader";
 
 interface Talk {
   title: string;
-  event: string;
   year: string;
   url: string;
   videoEmbed?: string;
@@ -14,7 +13,6 @@ interface Talk {
 const talks: Talk[] = [
   {
     title: "Exploring AI Agents: From Fundamentals to Implementation",
-    event: "MSCC Conference 2025",
     year: "2025",
     url: "https://conference.mscc.mu/agenda/875424",
     description:
@@ -22,7 +20,6 @@ const talks: Talk[] = [
   },
   {
     title: "Navigating the AI Landscape",
-    event: "MSCC Conference 2023",
     year: "2023",
     url: "https://2023.mscc.mu/agenda/455578",
     description:
@@ -30,7 +27,6 @@ const talks: Talk[] = [
   },
   {
     title: "Build and Program an Interactive Robot",
-    event: "MSCC Conference",
     year: "2019",
     url: "https://www.youtube.com/watch?v=QHnxsfYhUtk",
     videoEmbed: "https://www.youtube.com/embed/QHnxsfYhUtk",
@@ -39,7 +35,6 @@ const talks: Talk[] = [
   },
   {
     title: "How to Program a Robot Arm",
-    event: "MSCC Conference 2019",
     year: "2019",
     url: "https://2019.mscc.mu/session/98226",
     description:
@@ -67,17 +62,6 @@ const ThoughtLeadershipSection = () => {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="bg-background rounded-xl border border-border/50 overflow-hidden hover:border-primary/20 hover:shadow-lg transition-all duration-300"
             >
-              {talk.videoEmbed && (
-                <div className="aspect-video w-full md:w-1/2 bg-foreground/5">
-                  <iframe
-                    src={talk.videoEmbed}
-                    title={talk.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="w-full h-full"
-                  />
-                </div>
-              )}
               <div className="p-5 md:p-6">
                 <div className="flex items-start gap-3">
                   <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
@@ -92,7 +76,6 @@ const ThoughtLeadershipSection = () => {
                       <span className="text-xs font-body font-semibold text-primary bg-primary/10 px-2 py-0.5 rounded-full">
                         {talk.year}
                       </span>
-                      <span className="text-xs font-body text-muted-foreground">{talk.event}</span>
                     </div>
                     <h3 className="font-display text-lg md:text-xl font-bold text-foreground mb-2">
                       {talk.title}
@@ -112,6 +95,17 @@ const ThoughtLeadershipSection = () => {
                   </div>
                 </div>
               </div>
+              {talk.videoEmbed && (
+                <div className="aspect-video w-full md:max-w-lg mx-auto px-5 pb-5">
+                  <iframe
+                    src={talk.videoEmbed}
+                    title={talk.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full rounded-lg"
+                  />
+                </div>
+              )}
             </motion.div>
           ))}
         </div>
