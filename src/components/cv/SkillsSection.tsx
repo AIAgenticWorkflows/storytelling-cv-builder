@@ -57,7 +57,7 @@ const SkillsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-card rounded-xl p-5 md:p-6 border border-border/50 hover:border-primary/20 transition-all duration-300 hover:shadow-lg"
+              className="bg-card rounded-xl p-5 md:p-6 border border-border/50 hover:border-primary/20 transition-all duration-300 hover:shadow-lg h-full"
             >
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">

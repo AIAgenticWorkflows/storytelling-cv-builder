@@ -76,7 +76,7 @@ const RecommendationsSection = () => {
   const rec = recommendations[current];
 
   return (
-    <section className="py-12 md:py-24 px-4 md:px-6" id="recommendations">
+    <section className="py-12 md:py-24 px-4 md:px-6 bg-warm-glow" id="recommendations">
       <div className="container mx-auto max-w-4xl">
         <SectionHeader
           label="What People Say"
@@ -97,7 +97,7 @@ const RecommendationsSection = () => {
               dragElastic={0.2}
               onDragEnd={handleDragEnd}
               whileHover={{ scale: 1.01 }}
-              className="bg-quote-bg border border-border/50 rounded-2xl p-6 md:p-12 relative hover:shadow-xl hover:border-primary/20 transition-all duration-300 cursor-grab active:cursor-grabbing touch-pan-y"
+              className="bg-quote-bg border border-border/50 border-l-4 border-l-primary/30 rounded-2xl p-6 md:p-12 relative hover:shadow-xl hover:border-primary/20 transition-all duration-300 cursor-grab active:cursor-grabbing touch-pan-y"
             >
               <Quote className="absolute top-6 left-6 w-10 h-10 text-primary/15" />
               <div className="relative z-10">

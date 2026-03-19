@@ -3,7 +3,7 @@ import { Mail, Linkedin, Heart } from "lucide-react";
 
 const FooterSection = () => {
   return (
-    <footer className="py-12 md:py-20 px-4 md:px-6" id="contact">
+    <footer className="py-12 md:py-20 px-4 md:px-6 border-t border-border/30" id="contact">
       <div className="container mx-auto max-w-2xl text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

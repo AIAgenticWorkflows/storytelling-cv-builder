@@ -26,7 +26,7 @@ const SectionHeader = ({ label, title, subtitle }: SectionHeaderProps) => {
           {subtitle}
         </p>
       )}
-      <div className="w-16 h-0.5 bg-primary/40 mx-auto mt-6" />
+      <div className="w-16 h-0.5 bg-primary/60 mx-auto mt-6" />
     </motion.div>
   );
 };
