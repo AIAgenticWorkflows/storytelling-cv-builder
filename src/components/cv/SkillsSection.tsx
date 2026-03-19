@@ -49,7 +49,7 @@ const SkillsSection = () => {
           subtitle="Not just skills, the strategic capabilities that drive outcomes."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-10 md:mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-10 md:mb-16">
           {capabilities.map((cap, i) => (
             <motion.div
               key={cap.label}
