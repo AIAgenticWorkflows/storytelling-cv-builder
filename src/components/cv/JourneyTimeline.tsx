@@ -133,7 +133,7 @@ const timeline: TimelineEntry[] = [
 
 const JourneyTimeline = () => {
   return (
-    <section className="py-12 md:py-24 px-4 md:px-6" id="journey">
+    <section className="py-12 md:py-24 px-4 md:px-6 bg-warm-glow" id="journey">
       <div className="container mx-auto max-w-4xl">
         <SectionHeader
           label="The Journey"
