@@ -26,7 +26,7 @@ const talks: Talk[] = [
     year: "2023",
     url: "https://2023.mscc.mu/agenda/455578",
     description:
-      "A strategic overview for product leaders and developers on where AI creates real value versus hype. Frameworks for evaluating AI opportunities in existing products.",
+      "Drawing from our own journey, we shared the knowledge we acquired through our interaction with the OpenAI API and running large language models locally.",
   },
   {
     title: "Build and Program an Interactive Robot",
