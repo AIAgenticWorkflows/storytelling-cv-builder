@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader";
-import { Brain, Layers, Users, Globe, Award, Sparkles } from "lucide-react";
+import { Layers, Users, Globe, Award, Sparkles } from "lucide-react";
 
 const capabilities = [
   {
