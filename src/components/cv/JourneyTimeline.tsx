@@ -39,7 +39,7 @@ const timeline: TimelineEntry[] = [
       "Pitched and secured executive buy-in for Ally Agent, an AI-powered solution matching property seekers to listings. Took it from concept through business case to the next approval stage.",
     outcomes: [
       "Pitched directly to C-suite and secured green light to advance",
-      "Designed the product vision, user flows, and go-to-market approach",
+      "Conducted user interviews, secured early sign-ups and validated genuine interest across Romania, Kenya, and Slovakia",
     ],
     accent: true,
   },
