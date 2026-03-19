@@ -48,7 +48,7 @@ const timeline: TimelineEntry[] = [
     role: "Product Manager, Property Marketplace",
     period: "Jul 2019 – Oct 2024",
     impact:
-      "Owned the product roadmap for the most ambitious transformation the marketplace had seen. Partnered directly with CEOs, led two major platform migrations across 4 international markets, and grew revenue while scaling the team.",
+      "Owned the product roadmap for the most ambitious project of the company. Partnered directly with CEOs, led two major platform migrations across 4 international markets, and grew revenue while scaling the team.",
     outcomes: [
       "Led 2 platform migrations across 4 markets with zero business disruption",
       "Scaled team from 7 to 17 while delivering on an aggressive roadmap",
