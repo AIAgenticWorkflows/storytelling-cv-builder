@@ -25,7 +25,7 @@ const capabilities = [
     icon: Globe,
     label: "Technical Foundations",
     items: [
-      "Full-stack architecture & system design",
+      "Full-stack software development",
       "Multi-market deployment & internationalisation",
       "Data-driven decision making & experimentation",
     ],
