@@ -9,7 +9,7 @@ const capabilities = [
     items: [
       "Roadmap ownership from vision through execution",
       "Platform migrations without revenue disruption",
-      "Marketplace growth strategy & pricing",
+      "Marketplace growth",
     ],
   },
   {
