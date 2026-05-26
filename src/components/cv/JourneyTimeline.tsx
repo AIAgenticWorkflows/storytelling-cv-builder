@@ -52,7 +52,6 @@ const timeline: TimelineEntry[] = [
     outcomes: [
       "Led 2 platform migrations across 4 markets with zero business disruption",
       "Scaled team from 7 to 17 while delivering on an aggressive roadmap",
-      "Partnered with CEOs on strategy, pricing, and market expansion",
     ],
     portfolio: [
       { label: "PropertyCloud Mauritius", url: "https://www.propertycloud.mu/" },
