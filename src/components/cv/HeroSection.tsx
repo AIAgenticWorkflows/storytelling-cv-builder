@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Linkedin, ArrowDown, Zap, TrendingUp, Users, Mic, Rocket } from "lucide-react";
+import { Linkedin, ArrowDown, Zap, TrendingUp, Users, Mic, Rocket, Download } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jfif";
 
 const selectedImpact = [
@@ -113,6 +113,14 @@ const HeroSection = () => {
               >
                 <ArrowDown className="w-4 h-4" />
                 See my journey
+              </a>
+              <a
+                href="/Nisha_Appanah_CV.pdf"
+                download
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-primary/30 bg-primary/5 text-primary font-body text-sm font-medium hover:bg-primary/10 hover:border-primary/50 transition-colors"
+              >
+                <Download className="w-4 h-4" />
+                Download CV (PDF)
               </a>
             </motion.div>
           </motion.div>
