@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Linkedin, ArrowDown, Zap, TrendingUp, Users, Mic, Rocket } from "lucide-react";
+import { Linkedin, ArrowDown, Zap, TrendingUp, Users, Mic, Rocket, Download } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jfif";
 
 const selectedImpact = [
