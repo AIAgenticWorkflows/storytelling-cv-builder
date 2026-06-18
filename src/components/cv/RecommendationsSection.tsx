@@ -101,7 +101,7 @@ const RecommendationsSection = () => {
             >
               <Quote className="absolute top-6 left-6 w-10 h-10 text-primary/15" />
               <div className="relative z-10">
-                <p className="font-body text-foreground/85 text-base md:text-lg leading-relaxed mb-6 md:mb-8 italic">
+                <p className="font-body text-foreground text-base md:text-lg leading-relaxed mb-6 md:mb-8 italic">
                   "{rec.text}"
                 </p>
                 <div className="border-t border-border/50 pt-6">

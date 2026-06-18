@@ -48,7 +48,7 @@ const EducationSection = () => {
                 <h3 className="font-display text-lg font-semibold text-foreground">
                   {edu.school}
                 </h3>
-                <p className="font-body text-foreground/80">{edu.degree}</p>
+                <p className="font-body text-foreground">{edu.degree}</p>
                 <p className="font-body text-sm text-muted-foreground">{edu.years}</p>
               </div>
             </motion.div>
