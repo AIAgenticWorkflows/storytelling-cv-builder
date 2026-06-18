@@ -15,45 +15,45 @@
     --popover: 40 30% 98%;
     --popover-foreground: 30 20% 18%;
 
-    --primary: 18 55% 48%;
-    --primary-foreground: 40 33% 97%;
+    --primary: 199 77% 48%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 35 25% 91%;
-    --secondary-foreground: 30 18% 28%;
+    --secondary: 200 30% 92%;
+    --secondary-foreground: 205 35% 22%;
 
-    --muted: 35 20% 93%;
-    --muted-foreground: 25 12% 45%;
+    --muted: 200 25% 94%;
+    --muted-foreground: 205 12% 42%;
 
-    --accent: 35 40% 88%;
-    --accent-foreground: 25 30% 30%;
+    --accent: 199 60% 88%;
+    --accent-foreground: 205 45% 25%;
 
     --destructive: 0 65% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 35 20% 88%;
-    --input: 35 20% 88%;
-    --ring: 18 55% 48%;
+    --border: 200 25% 86%;
+    --input: 200 25% 86%;
+    --ring: 199 77% 48%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 40 28% 95%;
-    --sidebar-foreground: 30 20% 18%;
-    --sidebar-primary: 18 55% 48%;
-    --sidebar-primary-foreground: 40 33% 97%;
-    --sidebar-accent: 35 22% 91%;
-    --sidebar-accent-foreground: 30 18% 28%;
-    --sidebar-border: 35 20% 88%;
-    --sidebar-ring: 18 55% 48%;
+    --sidebar-background: 200 30% 95%;
+    --sidebar-foreground: 205 30% 18%;
+    --sidebar-primary: 199 77% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 200 28% 91%;
+    --sidebar-accent-foreground: 205 30% 22%;
+    --sidebar-border: 200 25% 86%;
+    --sidebar-ring: 199 77% 48%;
 
     /* Custom CV tokens */
-    --warm-glow: 40 30% 94%;
-    --warm-highlight: 18 55% 52%;
-    --warm-deep: 30 20% 20%;
-    --warm-sand: 35 30% 92%;
-    --timeline-line: 35 20% 82%;
-    --timeline-dot: 18 55% 48%;
-    --quote-bg: 35 28% 95%;
-    --quote-border: 18 45% 52%;
+    --warm-glow: 200 35% 95%;
+    --warm-highlight: 199 77% 52%;
+    --warm-deep: 205 35% 18%;
+    --warm-sand: 200 30% 92%;
+    --timeline-line: 200 25% 82%;
+    --timeline-dot: 199 77% 48%;
+    --quote-bg: 200 30% 95%;
+    --quote-border: 199 70% 52%;
   }
 
   .dark {
@@ -66,42 +66,42 @@
     --popover: 25 16% 12%;
     --popover-foreground: 35 15% 90%;
 
-    --primary: 18 55% 55%;
-    --primary-foreground: 25 18% 8%;
+    --primary: 199 77% 55%;
+    --primary-foreground: 205 40% 8%;
 
-    --secondary: 25 14% 16%;
-    --secondary-foreground: 35 15% 85%;
+    --secondary: 205 18% 16%;
+    --secondary-foreground: 200 25% 88%;
 
-    --muted: 25 14% 16%;
-    --muted-foreground: 30 10% 55%;
+    --muted: 205 18% 16%;
+    --muted-foreground: 200 12% 60%;
 
-    --accent: 30 25% 18%;
-    --accent-foreground: 35 35% 75%;
+    --accent: 199 40% 22%;
+    --accent-foreground: 200 50% 82%;
 
     --destructive: 0 55% 35%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 25 14% 18%;
-    --input: 25 14% 18%;
-    --ring: 18 55% 55%;
+    --border: 205 18% 20%;
+    --input: 205 18% 20%;
+    --ring: 199 77% 55%;
 
-    --sidebar-background: 25 16% 10%;
-    --sidebar-foreground: 35 15% 88%;
-    --sidebar-primary: 18 55% 55%;
-    --sidebar-primary-foreground: 25 18% 8%;
-    --sidebar-accent: 25 14% 14%;
-    --sidebar-accent-foreground: 35 15% 88%;
-    --sidebar-border: 25 14% 18%;
-    --sidebar-ring: 18 55% 55%;
+    --sidebar-background: 205 22% 10%;
+    --sidebar-foreground: 200 20% 88%;
+    --sidebar-primary: 199 77% 55%;
+    --sidebar-primary-foreground: 205 40% 8%;
+    --sidebar-accent: 205 18% 14%;
+    --sidebar-accent-foreground: 200 20% 88%;
+    --sidebar-border: 205 18% 20%;
+    --sidebar-ring: 199 77% 55%;
 
-    --warm-glow: 25 16% 12%;
-    --warm-highlight: 18 55% 55%;
-    --warm-deep: 35 15% 86%;
-    --warm-sand: 25 14% 16%;
-    --timeline-line: 25 14% 28%;
-    --timeline-dot: 18 55% 55%;
-    --quote-bg: 25 14% 12%;
-    --quote-border: 18 45% 48%;
+    --warm-glow: 205 20% 12%;
+    --warm-highlight: 199 77% 55%;
+    --warm-deep: 200 25% 88%;
+    --warm-sand: 205 18% 16%;
+    --timeline-line: 205 18% 28%;
+    --timeline-dot: 199 77% 55%;
+    --quote-bg: 205 18% 12%;
+    --quote-border: 199 70% 48%;
   }
 }
 @layer base {
