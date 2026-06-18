@@ -1,10 +1,29 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers":
-    "authorization, x-client-info, apikey, content-type, x-supabase-client-platform, x-supabase-client-platform-version, x-supabase-client-runtime, x-supabase-client-runtime-version",
-};
+const ALLOWED_ORIGINS = [
+  "https://nishaappanah.lovable.app",
+  "https://id-preview--c3d825e8-7704-4b8d-a941-c3202d5fdff6.lovable.app",
+  "http://localhost:8080",
+  "http://localhost:5173",
+];
+
+function buildCorsHeaders(origin: string | null): Record<string, string> {
+  const allowed = origin && ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0];
+  return {
+    "Access-Control-Allow-Origin": allowed,
+    "Vary": "Origin",
+    "Access-Control-Allow-Headers":
+      "authorization, x-client-info, apikey, content-type, x-supabase-client-platform, x-supabase-client-platform-version, x-supabase-client-runtime, x-supabase-client-runtime-version",
+  };
+}
+
+function isAllowedRequest(req: Request): boolean {
+  const origin = req.headers.get("origin");
+  const referer = req.headers.get("referer");
+  const check = (url: string | null) =>
+    !!url && ALLOWED_ORIGINS.some((o) => url === o || url.startsWith(o + "/"));
+  return check(origin) || check(referer);
+}
 
 const NISHA_PROFILE = `
 Nisha Appanah – 20-Year Technology Leader
