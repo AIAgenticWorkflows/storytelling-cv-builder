@@ -69,7 +69,7 @@ const SkillsSection = () => {
               </div>
               <ul className="space-y-2">
                 {cap.items.map((item, j) => (
-                  <li key={j} className="flex items-start gap-2 text-sm font-body text-foreground/80">
+                  <li key={j} className="flex items-start gap-2 text-sm font-body text-foreground">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0 mt-1.5" />
                     {item}
                   </li>

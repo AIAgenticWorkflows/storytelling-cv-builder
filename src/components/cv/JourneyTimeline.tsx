@@ -192,7 +192,7 @@ const JourneyTimeline = () => {
                         {entry.outcomes.map((o, i) => (
                           <li
                             key={i}
-                            className="text-sm text-foreground/80 font-body flex items-start gap-2"
+                            className="text-sm text-foreground font-body flex items-start gap-2"
                           >
                             <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0 mt-1.5" />
                             {o}
