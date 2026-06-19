@@ -38,12 +38,12 @@
 
     --sidebar-background: 200 30% 95%;
     --sidebar-foreground: 205 30% 18%;
-    --sidebar-primary: 199 77% 48%;
+    --sidebar-primary: 199 77% 34%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 200 28% 91%;
     --sidebar-accent-foreground: 205 30% 22%;
     --sidebar-border: 200 25% 86%;
-    --sidebar-ring: 199 77% 48%;
+    --sidebar-ring: 199 77% 34%;
 
     /* Custom CV tokens */
     --warm-glow: 210 12% 93%;
