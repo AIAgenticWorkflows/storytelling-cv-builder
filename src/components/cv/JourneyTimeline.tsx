@@ -174,22 +174,21 @@ const JourneyTimeline = () => {
                       {entry.period}
                       {entry.location && ` · ${entry.location}`}
                     </p>
-                    <p className="font-body text-foreground leading-relaxed text-sm">
-                      {entry.impact}
-                    </p>
-                    {entry.outcomes && (
-                      <ul className="mt-3 space-y-1.5">
-                        {entry.outcomes.map((o, i) => (
-                          <li
-                            key={i}
-                            className="text-sm text-foreground font-body flex items-start gap-2"
-                          >
-                            <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0 mt-1.5" />
-                            {o}
-                          </li>
-                        ))}
-                      </ul>
-                    )}
+                    <ul className="mt-3 space-y-1.5">
+                      <li className="text-sm text-foreground font-body flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0 mt-1.5" />
+                        {entry.impact}
+                      </li>
+                      {entry.outcomes?.map((o, i) => (
+                        <li
+                          key={i}
+                          className="text-sm text-foreground font-body flex items-start gap-2"
+                        >
+                          <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0 mt-1.5" />
+                          {o}
+                        </li>
+                      ))}
+                    </ul>
                     {entry.portfolio && (
                       <div className="mt-3 flex flex-wrap gap-2">
                         {entry.portfolio.map((link, i) => (
