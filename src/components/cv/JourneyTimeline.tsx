@@ -23,11 +23,10 @@ const timeline: TimelineEntry[] = [
     company: "Aplica Ltd",
     role: "Founder",
     period: "Nov 2024 – Present",
-    impact:
-      "After two decades building products for others, launched my own AI consultancy to help businesses cut through the hype and implement solutions that actually drive results.",
+    impact: "Launched an AI consultancy to cut through hype and deliver real business results.",
     outcomes: [
-      "Advising businesses on practical AI adoption and product strategy",
-      "Building AI-powered tools that solve real operational problems",
+      "Advise businesses on practical AI adoption and product strategy.",
+      "Build AI-powered tools that solve live operational problems.",
     ],
     accent: true,
   },
@@ -35,13 +34,12 @@ const timeline: TimelineEntry[] = [
     company: "Ringier South Africa",
     role: "Product Manager, AI Team & Property Marketplace",
     period: "Jul 2019 – Oct 2024",
-    impact:
-      "Owned the product roadmap for the company's most ambitious property marketplace, then pitched and secured executive buy-in for Ally Agent, an AI-powered solution matching property seekers to listings. Partnered directly with CEOs, led two major platform migrations across 4 international markets, and grew revenue while scaling the team.",
+    impact: "Owned the product roadmap for the company's largest property marketplace and its first AI initiative.",
     outcomes: [
-      "Led 2 platform migrations across 4 markets with zero business disruption",
-      "Scaled team from 7 to 17 while delivering on an aggressive roadmap",
-      "Pitched directly to C-suite and secured green light to advance the AI product",
-      "Conducted user interviews, secured early sign-ups and validated genuine interest across Romania, Kenya, and Slovakia",
+      "Led 2 platform migrations across 4 countries with zero business disruption.",
+      "Grew the team from 7 to 17 while delivering an aggressive roadmap.",
+      "Pitched Ally Agent to the C-suite and secured approval to advance.",
+      "Validated AI demand through user interviews and early sign-ups across Romania, Kenya, and Slovakia.",
     ],
     portfolio: [
       { label: "PropertyCloud Mauritius", url: "https://www.propertycloud.mu/" },
@@ -54,11 +52,10 @@ const timeline: TimelineEntry[] = [
     company: "Ringier South Africa",
     role: "Senior Software Developer",
     period: "Feb 2017 – Jun 2019",
-    impact:
-      "Architected the end-to-end property listing flow deployed across 5 African countries. Built a dynamic form builder that directly increased landing page conversion rates.",
+    impact: "Architected the end-to-end property listing flow deployed across 5 African countries.",
     outcomes: [
-      "Scalable listing architecture deployed in 5 countries simultaneously",
-      "Form builder powering high-converting landing pages across markets",
+      "Built a scalable listing architecture deployed in 5 countries simultaneously.",
+      "Created a dynamic form builder that lifted landing-page conversion rates.",
     ],
     portfolio: [
       { label: "PropertyCloud Mauritius", url: "https://www.propertycloud.mu/" },
@@ -72,11 +69,10 @@ const timeline: TimelineEntry[] = [
     role: "Managing Director",
     period: "Mar 2015 – Jan 2017",
     location: "Mauritius",
-    impact:
-      "Built and maintained live housing allocation systems for the University of Copenhagen and Technical University of Denmark. Optimised algorithms and databases from customer feedback, delivering training across borders.",
+    impact: "Built and ran live housing allocation systems for the University of Copenhagen and DTU.",
     outcomes: [
-      "Systems serving thousands of university students across Denmark",
-      "Direct client relationships with international partners",
+      "Served thousands of students across Denmark.",
+      "Optimized algorithms and databases directly from customer feedback.",
     ],
   },
   {
@@ -84,11 +80,10 @@ const timeline: TimelineEntry[] = [
     role: "Project Manager",
     period: "Feb 2013 – Feb 2015",
     location: "Mauritius",
-    impact:
-      "Managed a team of 7, driving development of a smartcard payment solution. Built the core business logic layer and ran sprints end-to-end.",
+    impact: "Led a team of 7 to deliver a smartcard payment solution.",
     outcomes: [
-      "Delivered the business logic layer underpinning the payment system",
-      "Full sprint ownership from planning to release, including demos to stakeholders to show progress",
+      "Built the core business logic layer for the payment system.",
+      "Owned the full sprint cycle from planning to release demos.",
     ],
   },
   {
@@ -96,16 +91,22 @@ const timeline: TimelineEntry[] = [
     role: "CEO & Project Manager",
     period: "Feb 2012 – Jan 2013",
     location: "Ebene, Mauritius",
-    impact:
-      "Co-directed the company and led development of a workflow product that generates web solutions from business rules. Engaged directly with Danish enterprise clients.",
+    impact: "Co-directed the company and shipped a workflow product that generated web solutions from business rules.",
+    outcomes: [
+      "Turned business rules into live web solutions for enterprise clients.",
+      "Closed and delivered directly with Danish enterprise customers.",
+    ],
   },
   {
     company: "SWTEAMS Ltd",
     role: "Software Developer",
     period: "Dec 2006 – Jul 2010",
     location: "Quatre Bornes",
-    impact:
-      "Built university applications, electronic business document systems for the EU-funded PEPPOL project, and rule engine modules. The foundation years where engineering discipline was forged.",
+    impact: "Built university applications and electronic business-document systems for the EU-funded PEPPOL project.",
+    outcomes: [
+      "Developed university applications and rule-engine modules.",
+      "Built e-document systems for the EU-funded PEPPOL network.",
+    ],
     portfolio: [
       { label: "MailEDI", url: "https://www.mailedi.biz/" },
       { label: "PEPPOL", url: "https://peppol.org/" },
@@ -115,8 +116,12 @@ const timeline: TimelineEntry[] = [
     company: "University of Mauritius",
     role: "Programmer & Part-time Tutor",
     period: "Nov 2005 – Nov 2006",
-    impact:
-      "Programmed the I-Learn platform, taught IT to university students, and was in charge of training the Internet and Computing Core Certification (IC3) trainers of 400,000 Mauritians.",
+    impact: "Programmed the I-Learn platform and trained IC3 instructors at national scale.",
+    outcomes: [
+      "Built the I-Learn platform for university students.",
+      "Taught IT courses to undergraduate students.",
+      "Trained IC3 instructors reaching 400,000 Mauritians.",
+    ],
   },
 ];
 
