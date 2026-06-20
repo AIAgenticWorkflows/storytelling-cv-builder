@@ -33,25 +33,15 @@ const timeline: TimelineEntry[] = [
   },
   {
     company: "Ringier South Africa",
-    role: "Product Manager, AI Team",
-    period: "Jun 2024 – Oct 2024",
-    impact:
-      "Pitched and secured executive buy-in for Ally Agent, an AI-powered solution matching property seekers to listings. Took it from concept through business case to the next approval stage.",
-    outcomes: [
-      "Pitched directly to C-suite and secured green light to advance",
-      "Conducted user interviews, secured early sign-ups and validated genuine interest across Romania, Kenya, and Slovakia",
-    ],
-    accent: true,
-  },
-  {
-    company: "Ringier South Africa",
-    role: "Product Manager, Property Marketplace",
+    role: "Product Manager, AI Team & Property Marketplace",
     period: "Jul 2019 – Oct 2024",
     impact:
-      "Owned the product roadmap for the most ambitious project of the company. Partnered directly with CEOs, led two major platform migrations across 4 international markets, and grew revenue while scaling the team.",
+      "Owned the product roadmap for the company's most ambitious property marketplace, then pitched and secured executive buy-in for Ally Agent, an AI-powered solution matching property seekers to listings. Partnered directly with CEOs, led two major platform migrations across 4 international markets, and grew revenue while scaling the team.",
     outcomes: [
       "Led 2 platform migrations across 4 markets with zero business disruption",
       "Scaled team from 7 to 17 while delivering on an aggressive roadmap",
+      "Pitched directly to C-suite and secured green light to advance the AI product",
+      "Conducted user interviews, secured early sign-ups and validated genuine interest across Romania, Kenya, and Slovakia",
     ],
     portfolio: [
       { label: "PropertyCloud Mauritius", url: "https://www.propertycloud.mu/" },
