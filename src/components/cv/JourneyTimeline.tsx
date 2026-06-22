@@ -63,24 +63,8 @@ const timeline: TimelineEntry[] = [
       { label: "Mamaison Senegal", url: "https://www.mamaison.sn/" },
       { label: "Private Property Nigeria", url: "https://www.privateproperty.com.ng/" },
     ],
+  },
 
-  },
-  {
-    company: "Ringier South Africa",
-    role: "Senior Software Developer",
-    period: "Feb 2017 – Jun 2019",
-    impact: "Architected the end-to-end property listing flow deployed across 5 African countries.",
-    outcomes: [
-      "Built a scalable listing architecture deployed in 5 countries simultaneously.",
-      "Created a dynamic form builder that lifted landing-page conversion rates.",
-    ],
-    portfolio: [
-      { label: "PropertyCloud Mauritius", url: "https://www.propertycloud.mu/" },
-      { label: "BuyRentKenya", url: "https://www.buyrentkenya.com/" },
-      { label: "Property Zimbabwe", url: "https://www.property.co.zw/" },
-      { label: "Imobiliare Romania", url: "https://www.imobiliare.ro/" },
-    ],
-  },
   {
     company: "Aplica Ltd",
     role: "Managing Director",
