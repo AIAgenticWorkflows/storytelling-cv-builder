@@ -42,10 +42,9 @@ const timeline: TimelineEntry[] = [
       "Validated AI demand through user interviews and early sign-ups across Romania, Kenya, and Slovakia.",
     ],
     portfolio: [
-      { label: "PropertyCloud Mauritius", url: "https://www.propertycloud.mu/" },
       { label: "BuyRentKenya", url: "https://www.buyrentkenya.com/" },
-      { label: "Property Zimbabwe", url: "https://www.property.co.zw/" },
       { label: "Imobiliare Romania", url: "https://www.imobiliare.ro/" },
+      { label: "Mamaison Senegal", url: "https://www.mamaison.sn/" },
     ],
   },
   {
@@ -61,9 +60,11 @@ const timeline: TimelineEntry[] = [
       { label: "PropertyCloud Mauritius", url: "https://www.propertycloud.mu/" },
       { label: "BuyRentKenya", url: "https://www.buyrentkenya.com/" },
       { label: "Property Zimbabwe", url: "https://www.property.co.zw/" },
-      { label: "Imobiliare Romania", url: "https://www.imobiliare.ro/" },
+      { label: "Mamaison Senegal", url: "https://www.mamaison.sn/" },
+      { label: "Private Property Nigeria", url: "https://www.privateproperty.com.ng/" },
     ],
   },
+
   {
     company: "Aplica Ltd",
     role: "Managing Director",
