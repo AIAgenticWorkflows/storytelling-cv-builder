@@ -12,10 +12,10 @@ interface Recommendation {
 
 const recommendations: Recommendation[] = [
   {
-    name: "Christian Drejae",
-    title: "CEO @ The EasyCopy Company | Software Sales",
-    relationship: "Christian worked with Nisha at different companies",
-    text: "I've known Nisha for more than 10 years as a dedicated and skillful provider of IT solutions. She has always been appreciated by our customers. She is easy to work with and not afraid to go the extra mile for a job well done.",
+    name: "Christian Drejøe",
+    title: "CEO, Augrin Software ApS",
+    relationship: "Christian worked with Nisha as a provider of IT solutions",
+    text: "I’ve known Nisha for more than 10 years as a dedicated and skillful provider of IT solutions. Always appreciated by our customers, easy to work with, not afraid to go the extra mile.",
   },
   {
     name: "Delphine Racoupeau",
@@ -42,10 +42,10 @@ const recommendations: Recommendation[] = [
     text: "I've been part of Nisha's team during my time at Ringier and we worked on a major project for the company. Nisha led a team of engineers and designers while managing requirements from users and clients. It has always been a pleasure to work alongside her and I would say her people skills are extremely valuable to have within a tech organization. We often meet in tech events as she's also active in the local communities.",
   },
   {
-    name: "Lydie Lambert",
-    title: "Strategic and inclusive project leader",
-    relationship: "Lydie was Nisha's client",
-    text: "Nisha is highly professional and capable. Her technical skills are excellent, but it's especially fortunate when one finds an IT partner that can also communicate with users on a user level. She's effective, dependable and pleasant to work with.",
+    name: "Erica Frederiksen",
+    title: "International Housing Consultant, Boligfonden DTU",
+    relationship: "Erica was Nisha's client",
+    text: "Nisha is highly professional and capable. Excellent technical skills, but it’s especially fortunate when one finds an IT partner that can also communicate with users on a user level.",
   },
   {
     name: "Jahved Aktaar Cassim Saib",

@@ -4,30 +4,39 @@ import { Layers, Users, Globe, Award, Sparkles } from "lucide-react";
 
 const capabilities = [
   {
-    icon: Layers,
-    label: "Product Leadership",
+    icon: Sparkles,
+    label: "AI & Product",
     items: [
-      "Roadmap ownership from vision through execution",
-      "Platform migrations without revenue disruption",
-      "Marketplace growth",
+      "AI strategy",
+      "Agent design",
+      "LLM integration",
+      "Product discovery",
     ],
   },
   {
     icon: Users,
-    label: "Team & Stakeholder Leadership",
+    label: "Leadership",
     items: [
-      "Scaling cross-functional teams (7→17) through growth phases",
-      "C-suite partnership on strategy & investment decisions",
-      "Cross-market coordination across 5+ countries",
+      "Cross-functional teams",
+      "Executive comms",
+      "Roadmap ownership",
+    ],
+  },
+  {
+    icon: Layers,
+    label: "Engineering",
+    items: [
+      "Platform migrations",
+      "System architecture",
+      "Web platforms",
     ],
   },
   {
     icon: Globe,
-    label: "Technical Foundations",
+    label: "Tools",
     items: [
-      "Full-stack software development",
-      "Multi-market deployment & internationalisation",
-      "Data-driven decision making & experimentation",
+      "React, TypeScript, Python, .NET",
+      "SQL, Supabase, Gemini, GPT",
     ],
   },
 ];
@@ -49,7 +58,7 @@ const SkillsSection = () => {
           subtitle="Not just skills, the strategic capabilities that drive outcomes."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-10 md:mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-10 md:mb-16">
           {capabilities.map((cap, i) => (
             <motion.div
               key={cap.label}

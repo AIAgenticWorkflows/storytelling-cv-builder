@@ -5,23 +5,23 @@ import profilePhoto from "@/assets/profile-photo.jfif";
 const selectedImpact = [
   {
     icon: TrendingUp,
-    text: "Led 2 major platform migrations across 4 markets with zero revenue disruption",
+    text: "3 platform migrations across 4 markets.",
   },
   {
     icon: Rocket,
-    text: "Pitched Ally Agent to executive leadership, secured approval to advance to next stage",
-  },
-  {
-    icon: Mic,
-    text: "Conference speaker on AI agents, robotics & implementation strategy",
+    text: "Ally Agent: pitched to C-suite, approved for next stage.",
   },
   {
     icon: Users,
-    text: "Scaled a cross-functional team from 7 to 17 while delivering on an ambitious transformation roadmap",
+    text: "Scaled team from 7 to 17 across continents.",
   },
   {
     icon: Zap,
-    text: "Founded Aplica, helping businesses unlock growth through practical AI solutions",
+    text: "Founded Aplica — practical AI for real businesses.",
+  },
+  {
+    icon: Mic,
+    text: "Speaker on AI agents, robotics & implementation.",
   },
 ];
 
@@ -63,6 +63,15 @@ const HeroSection = () => {
             transition={{ duration: 0.7 }}
             className="text-center md:text-left"
           >
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.15, duration: 0.6 }}
+              className="font-body text-xs md:text-sm text-primary uppercase tracking-wider mb-2 font-semibold"
+            >
+              Software Engineer &rarr; Product Leader &rarr; AI Founder
+            </motion.div>
+
             <motion.h1
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
@@ -78,7 +87,7 @@ const HeroSection = () => {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="font-display text-lg md:text-2xl text-primary mb-4 italic"
             >
-              I turn complex technology into products people actually use.
+              Turning complex tech into products people use.
             </motion.p>
 
             <motion.p
@@ -87,9 +96,9 @@ const HeroSection = () => {
               transition={{ delay: 0.55, duration: 0.6 }}
               className="font-body text-muted-foreground text-sm md:text-base max-w-xl leading-relaxed mb-6"
             >
-              20 years building, shipping, and leading: from code to product strategy to AI.
-              I've migrated platforms without breaking revenue, scaled teams across continents,
-              and now I help businesses make AI work in the real world.
+              Tech leader and AI strategist with 20 years building, shipping and leading.
+              I migrate platforms without breaking revenue, scale teams across continents, and
+              help businesses turn AI from hype into outcomes.
             </motion.p>
 
             <motion.div
