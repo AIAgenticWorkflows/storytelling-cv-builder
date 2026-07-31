@@ -44,7 +44,7 @@ const recommendations: Recommendation[] = [
   {
     name: "Erica Frederiksen",
     title: "International Housing Consultant, Boligfonden DTU",
-    relationship: "Erica was Nisha's client",
+    relationship: "Nisha worked with Erica as an IT partner",
     text: "Nisha is highly professional and capable. Excellent technical skills, but it’s especially fortunate when one finds an IT partner that can also communicate with users on a user level.",
   },
   {

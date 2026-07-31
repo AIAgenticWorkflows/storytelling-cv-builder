@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { Mail, Linkedin, Heart, Phone } from "lucide-react";
+import { Mail, Linkedin, Phone, Heart } from "lucide-react";
 
 const FooterSection = () => {
   return (
-    <footer className="py-12 md:py-20 px-4 md:px-6 border-t border-border/30" id="contact">
+    <footer className="py-12 md:py-20 px-4 md:px-6 border-t border-border/30 bg-warm-glow" id="contact">
       <div className="container mx-auto max-w-2xl text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -47,7 +47,7 @@ const FooterSection = () => {
               whileTap={{ scale: 0.97 }}
               className="flex items-center gap-2 px-6 py-3 rounded-full border border-border bg-background text-foreground font-body font-semibold hover:border-primary/40 hover:shadow-lg transition-all"
             >
-              <Linkedin className="w-4 h-4" />
+              <Linkedin className="w-4 h-4 text-primary" />
               LinkedIn
             </motion.a>
           </div>

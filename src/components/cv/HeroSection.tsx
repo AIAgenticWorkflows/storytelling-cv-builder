@@ -27,7 +27,7 @@ const selectedImpact = [
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-24">
+    <section className="relative min-h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-24 bg-warm-glow">
       {/* Subtle background shapes */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 rounded-full bg-primary/5 blur-3xl" />
@@ -64,12 +64,12 @@ const HeroSection = () => {
             className="text-center md:text-left"
           >
             <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.15, duration: 0.6 }}
-              className="font-body text-xs md:text-sm text-primary uppercase tracking-wider mb-2 font-semibold"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1, duration: 0.5 }}
+              className="text-primary font-body text-xs md:text-sm font-semibold uppercase tracking-widest mb-2"
             >
-              Software Engineer &rarr; Product Leader &rarr; AI Founder
+              Software Engineer &bull; Product Leader &bull; AI Founder
             </motion.div>
 
             <motion.h1
@@ -97,8 +97,8 @@ const HeroSection = () => {
               className="font-body text-muted-foreground text-sm md:text-base max-w-xl leading-relaxed mb-6"
             >
               Tech leader and AI strategist with 20 years building, shipping and leading.
-              I migrate platforms without breaking revenue, scale teams across continents, and
-              help businesses turn AI from hype into outcomes.
+              I migrate platforms without breaking revenue, scale teams across continents,
+              and help businesses turn AI from hype into outcomes.
             </motion.p>
 
             <motion.div

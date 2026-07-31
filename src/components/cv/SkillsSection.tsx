@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader";
-import { Layers, Users, Globe, Award, Sparkles } from "lucide-react";
+import { Brain, Users, Terminal, Settings, Award, Sparkles } from "lucide-react";
 
 const capabilities = [
   {
-    icon: Sparkles,
+    icon: Brain,
     label: "AI & Product",
     items: [
       "AI strategy",
@@ -23,7 +23,7 @@ const capabilities = [
     ],
   },
   {
-    icon: Layers,
+    icon: Terminal,
     label: "Engineering",
     items: [
       "Platform migrations",
@@ -32,7 +32,7 @@ const capabilities = [
     ],
   },
   {
-    icon: Globe,
+    icon: Settings,
     label: "Tools",
     items: [
       "React, TypeScript, Python, .NET",

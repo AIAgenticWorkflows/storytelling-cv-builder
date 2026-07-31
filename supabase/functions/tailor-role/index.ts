@@ -27,18 +27,18 @@ function isAllowedRequest(req: Request): boolean {
 }
 
 const NISHA_PROFILE = `
-Nisha Appanah – Software Engineer -> Product Leader -> AI Founder
+Nisha Appanah – 20-Year Technology Leader (Software Engineer → Product Leader → AI Founder)
 
-CURRENT: Founder & AI Consultant at Aplica Ltd (Nov 2024–Present) – Founded an AI consultancy helping businesses cut through hype and ship solutions that drive results. Advising on practical AI adoption, product strategy and AI-powered operational tools. Conference speaker on AI agents, robotics and implementation strategy.
+CURRENT: Founder & AI Consultant at Aplica Ltd (Nov 2024–Present) – Helping businesses cut through hype and ship AI solutions that drive results.
 
 EXPERIENCE:
-- Product Manager — AI Team & Property Marketplace at Ringier South Africa (Jul 2019–Oct 2024): Led 3 platform migrations across 4 markets. Pitched Ally Agent to C-suite and secured executive green light to advance to next stage. Validated demand via user interviews and early sign-ups across Romania, Kenya and Slovakia. Scaled cross-functional team from 7 to 17 while delivering an ambitious roadmap. Partnered directly with CEOs across Mauritius, Kenya, Zimbabwe and Romania.
-- Senior Software Developer at Ringier South Africa (Feb 2017–Jun 2019): Architected end-to-end property listing flow deployed across 5 African countries. Built a dynamic form builder that lifted landing page conversion across markets.
+- Product Manager — AI Team & Property Marketplace at Ringier South Africa (Jul 2019–Oct 2024): 3 platform migrations across 4 markets; scaled cross-functional team from 7 to 17 while delivering an ambitious roadmap; partnered directly with CEOs across Mauritius, Kenya, Zimbabwe, and Romania; pitched Ally Agent to C-suite and secured executive green light; validated demand via user interviews and early sign-ups across Romania, Kenya, and Slovakia.
+- Senior Software Developer at Ringier South Africa (Feb 2017–Jun 2019): Architected end-to-end property listing flow deployed across 5 African countries; built dynamic form builder lifting landing page conversions.
 - Managing Director at Aplica Ltd (Mar 2015–Jan 2017): Built and maintained housing allocation systems for University of Copenhagen and DTU.
-- Project Manager at Expand Technology (Feb 2013–Feb 2015): Led a team of 7 to deliver a smartcard payment solution; owned core business logic.
-- CEO & Project Manager at KnowGo Ltd (Feb 2012–Jan 2013): Co-directed the company and shipped a workflow product that generated web solutions from business rules.
-- Software Developer at SWTEAMS Ltd (Dec 2006–Jul 2010): Built university applications and electronic business-document systems for the EU-funded PEPPOL project.
-- Programmer & Part-time Tutor at University of Mauritius (Nov 2005–Nov 2006): Programmed the I-Learn platform and trained IC3 instructors at national scale.
+- Project Manager at Expand Technology (Feb 2013–Feb 2015): Led team of 7 to deliver smartcard payment solution; owned core business logic.
+- CEO & Project Manager at KnowGo Ltd (Feb 2012–Jan 2013): Shipped workflow product generating web solutions from business rules.
+- Software Developer at SWTEAMS Ltd (Dec 2006–Jul 2010): University applications, EU-funded PEPPOL project, rule engine modules.
+- Programmer & Part-time Tutor at University of Mauritius (Nov 2005–Nov 2006).
 
 SKILLS:
 - AI & Product: AI strategy, agent design, LLM integration, product discovery
@@ -46,12 +46,12 @@ SKILLS:
 - Engineering: Platform migrations, system architecture, web platforms
 - Tools: React, TypeScript, Python, .NET, SQL, Supabase, Gemini, GPT
 
-CERTIFICATIONS: AI Agents Fundamentals, Advanced Product Management: Vision, Strategy & Metrics, Vibe Coding, miniCON Agentic AI.
+CERTIFICATIONS: AI Agents Fundamentals, Advanced Product Management: Vision Strategy & Metrics, Vibe Coding, miniCON Agentic AI.
 
 EDUCATION:
-- Master of International Business at Curtin University, Australia (2014 – 2016)
-- MSc Computational Science & Engineering at University of Technology, Mauritius (2005 – 2007)
-- Bachelor of Information Technology at University of Canberra, Australia (2002 – 2005)
+- Master of International Business, Curtin University, Australia (2014–2016)
+- MSc Computational Science & Engineering, University of Technology, Mauritius (2005–2007)
+- Bachelor of Information Technology, University of Canberra, Australia (2002–2005)
 
 LANGUAGES: English, French, Mauritian Creole.
 

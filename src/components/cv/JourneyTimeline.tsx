@@ -34,12 +34,12 @@ const timeline: TimelineEntry[] = [
     company: "Ringier South Africa",
     role: "Product Manager — AI Team & Property Marketplace",
     period: "Jul 2019 – Oct 2024",
-    impact: "Led 3 platform migrations across 4 markets.",
+    impact: "3 platform migrations across 4 markets.",
     outcomes: [
-      "Pitched Ally Agent to C-suite and secured executive green light to advance to next stage.",
-      "Validated demand via user interviews and early sign-ups across Romania, Kenya and Slovakia.",
       "Scaled cross-functional team from 7 to 17 while delivering an ambitious roadmap.",
       "Partnered directly with CEOs across Mauritius, Kenya, Zimbabwe and Romania.",
+      "Ally Agent: pitched to C-suite and secured executive green light to advance to next stage.",
+      "Validated demand via user interviews and early sign-ups across Romania, Kenya and Slovakia.",
     ],
     portfolio: [
       { label: "BuyRentKenya", url: "https://www.buyrentkenya.com/" },
@@ -68,13 +68,17 @@ const timeline: TimelineEntry[] = [
     company: "Aplica Ltd",
     role: "Managing Director",
     period: "Mar 2015 – Jan 2017",
+    location: "Mauritius",
     impact: "Built and maintained housing allocation systems for University of Copenhagen and DTU.",
+    outcomes: [],
   },
   {
     company: "Expand Technology",
     role: "Project Manager",
     period: "Feb 2013 – Feb 2015",
+    location: "Mauritius",
     impact: "Led a team of 7 to deliver a smartcard payment solution; owned core business logic.",
+    outcomes: [],
   },
   {
     company: "KnowGo Ltd",
