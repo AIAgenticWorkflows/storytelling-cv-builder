@@ -14,7 +14,7 @@ const talks: Talk[] = [
   {
     title: "Exploring AI Agents: From Fundamentals to Implementation",
     year: "2025",
-    url: "https://conference.mscc.mu/agenda/875424",
+    url: "https://lnkd.in/p/d62f-XZk",
     description:
       "Introducing the fundamentals of AI agents using N8N, showing how they operate and demoing a production use case.",
   },
