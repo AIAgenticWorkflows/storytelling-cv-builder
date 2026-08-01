@@ -44,16 +44,11 @@ const recommendations: Recommendation[] = [
   },
   {
     name: "Sandeep Ramgolam",
-    title: "Frontend / UX / Linux / Open Source / GDE",
-    relationship: "Nisha was senior to Sandeep at Ringier",
+    title: "Senior Frontend Dev, Ringier SA",
+    relationship: "Aug 2024, Sandeep was Nisha's colleague at Ringier",
     text: "I've been part of Nisha's team during my time at Ringier and we worked on a major project for the company. Nisha led a team of engineers and designers while managing requirements from users and clients. It has always been a pleasure to work alongside her and I would say her people skills are extremely valuable to have within a tech organization. We often meet in tech events as she's also active in the local communities.",
   },
-  {
-    name: "Lydie Lambert",
-    title: "Strategic and inclusive project leader",
-    relationship: "Lydie was Nisha's client",
-    text: "Nisha is highly professional and capable. Her technical skills are excellent, but it's especially fortunate when one finds an IT partner that can also communicate with users on a user level. She's effective, dependable and pleasant to work with.",
-  },
+
   {
     name: "Jahved Aktaar Cassim Saib",
     title: "QA",
