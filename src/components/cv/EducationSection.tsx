@@ -5,17 +5,17 @@ import { GraduationCap } from "lucide-react";
 const education = [
   {
     school: "Curtin University, Australia",
-    degree: "Master of International Business",
+    degree: "Master's Degree, International Business",
     years: "2014 – 2016",
   },
   {
     school: "University of Technology, Mauritius",
-    degree: "MSc Computational Science & Engineering",
+    degree: "Master's Degree, Computational Science & Engineering",
     years: "2005 – 2007",
   },
   {
     school: "University of Canberra, Australia",
-    degree: "Bachelor of Information Technology",
+    degree: "Bachelor's Degree, Information Technology",
     years: "2002 – 2005",
   },
 ];
