@@ -5,25 +5,26 @@ import profilePhoto from "@/assets/profile-photo.jfif";
 const selectedImpact = [
   {
     icon: TrendingUp,
-    text: "Led 2 major platform migrations across 4 markets with zero revenue disruption",
+    text: "Built and modernized platforms serving 1M+ monthly users and 3M+ sessions",
   },
   {
     icon: Rocket,
-    text: "Pitched Ally Agent to executive leadership, secured approval to advance to next stage",
+    text: "Pitched an AI Agent to executive leadership and secured approval to advance",
   },
   {
     icon: Mic,
-    text: "Conference speaker on AI agents, robotics & implementation strategy",
+    text: "Conference speaker on data privacy, AI agents and robotics",
   },
   {
     icon: Users,
-    text: "Scaled a cross-functional team from 7 to 17 while delivering on an ambitious transformation roadmap",
+    text: "Led cross-functional product and engineering teams of up to 17 people",
   },
   {
     icon: Zap,
-    text: "Founded Aplica, helping businesses unlock growth through practical AI solutions",
+    text: "Founded Aplica, an AI consultancy helping businesses automate with AI",
   },
 ];
+
 
 const HeroSection = () => {
   return (
