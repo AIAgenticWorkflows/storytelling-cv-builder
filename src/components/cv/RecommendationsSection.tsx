@@ -12,17 +12,24 @@ interface Recommendation {
 
 const recommendations: Recommendation[] = [
   {
-    name: "Christian Drejae",
-    title: "CEO @ The EasyCopy Company | Software Sales",
-    relationship: "Christian worked with Nisha at different companies",
-    text: "I've known Nisha for more than 10 years as a dedicated and skillful provider of IT solutions. She has always been appreciated by our customers. She is easy to work with and not afraid to go the extra mile for a job well done.",
+    name: "Christian Drejøe",
+    title: "CEO, Augrin Software ApS",
+    relationship: "July 2026, Christian was Nisha's client at Aplica",
+    text: "I've worked with Nisha for over 10 years. She combines strong technical skills with something rarer: the ability to actually understand what the customer needs and deliver it without fuss. Whether building housing systems or AI automation, she's dependable, easy to work with, and always goes the extra mile.",
   },
   {
     name: "Delphine Racoupeau",
-    title: "Head of Product · Solutions at Ringier South Africa",
-    relationship: "Worked with Nisha for over 4 years at Ringier",
+    title: "Head of Product, Ringier SA",
+    relationship: "Sep 2024, Delphine was Nisha's colleague at Ringier",
     text: "I've had the pleasure of working with Nisha for over 4 years at Ringier. She always prioritizes strong relationships with her colleagues, which I believe has been key to the success of the projects she led. I could always rely on her for brainstorming and honest opinions. I've seen her step out of her comfort zone and grow, and it's been truly inspiring to work alongside her.",
   },
+  {
+    name: "Erica Frederiksen",
+    title: "International Housing Consultant at Boligfonden DTU",
+    relationship: "August 2015, Erica was Nisha's client at Aplica",
+    text: "Nisha is highly professional and capable. Her technical skills are excellent, but it's especially fortunate when one finds an IT partner that can also communicate with users on a user level. She's effective, dependable and pleasant to work with.",
+  },
+
   {
     name: "Elias Mwangi",
     title: "Full Stack Web Developer | 10+ Years in Laravel, PHP, and Real Estate Solutions",
