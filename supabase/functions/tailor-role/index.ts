@@ -27,31 +27,25 @@ function isAllowedRequest(req: Request): boolean {
 }
 
 const NISHA_PROFILE = `
-Nisha Appanah – 20-Year Technology Leader (Software Engineer → Product Leader → AI Founder)
+Nisha Appanah – 20-Year Technology Leader
 
-CURRENT: Founder & AI Consultant at Aplica Ltd (Nov 2024–Present) – Helping businesses cut through hype and ship AI solutions that drive results.
+CURRENT: Founder at Aplica Ltd (Nov 2024–Present) – Helping businesses unlock growth through practical AI solutions.
 
 EXPERIENCE:
-- Product Manager — AI Team & Property Marketplace at Ringier South Africa (Jul 2019–Oct 2024): 3 platform migrations across 4 markets; scaled cross-functional team from 7 to 17 while delivering an ambitious roadmap; partnered directly with CEOs across Mauritius, Kenya, Zimbabwe, and Romania; pitched Ally Agent to C-suite and secured executive green light; validated demand via user interviews and early sign-ups across Romania, Kenya, and Slovakia.
-- Senior Software Developer at Ringier South Africa (Feb 2017–Jun 2019): Architected end-to-end property listing flow deployed across 5 African countries; built dynamic form builder lifting landing page conversions.
-- Managing Director at Aplica Ltd (Mar 2015–Jan 2017): Built and maintained housing allocation systems for University of Copenhagen and DTU.
-- Project Manager at Expand Technology (Feb 2013–Feb 2015): Led team of 7 to deliver smartcard payment solution; owned core business logic.
-- CEO & Project Manager at KnowGo Ltd (Feb 2012–Jan 2013): Shipped workflow product generating web solutions from business rules.
+- Product Manager, AI Team at Ringier South Africa (Jun–Oct 2024): Pitched Ally Agent, an AI-powered solution matching property seekers to listings.
+- Product Manager, Property Marketplace at Ringier South Africa (Jul 2019–Oct 2024): Led a 17-member cross-functional team, 2 major platform migrations, collaborated across multiple international markets, partnered with CEOs.
+- Senior Software Developer at Ringier South Africa (Feb 2017–Jun 2019): Architected end-to-end property listing flow, built features deployed across 5 African countries, created dynamic form builder.
+- Managing Director at Aplica Ltd (Mar 2015–Jan 2017): Built and maintained housing systems for University of Copenhagen and Technical University of Denmark.
+- Project Manager at Expand Technology (Feb 2013–Feb 2015): Managed team of 7, smartcard payment solution development.
+- CEO & Project Manager at KnowGo Ltd (Feb 2012–Jan 2012): Co-directed company, led workflow product development.
 - Software Developer at SWTEAMS Ltd (Dec 2006–Jul 2010): University applications, EU-funded PEPPOL project, rule engine modules.
 - Programmer & Part-time Tutor at University of Mauritius (Nov 2005–Nov 2006).
 
-SKILLS:
-- AI & Product: AI strategy, agent design, LLM integration, product discovery
-- Leadership: Cross-functional teams, executive comms, roadmap ownership
-- Engineering: Platform migrations, system architecture, web platforms
-- Tools: React, TypeScript, Python, .NET, SQL, Supabase, Gemini, GPT
+SKILLS: AI Agents, Generative AI, Vibe Coding, Agentic AI, AI Strategy, Product Roadmap, Platform Migration, Online Marketplace, Product Development, Vision & Metrics, Cross-functional Teams, CEO Partnership, Sprint Planning, Scrum, Stakeholder Management, Multi-market Deployment.
 
 CERTIFICATIONS: AI Agents Fundamentals, Advanced Product Management: Vision Strategy & Metrics, Vibe Coding, miniCON Agentic AI.
 
-EDUCATION:
-- Master of International Business, Curtin University, Australia (2014–2016)
-- MSc Computational Science & Engineering, University of Technology, Mauritius (2005–2007)
-- Bachelor of Information Technology, University of Canberra, Australia (2002–2005)
+EDUCATION: MSc Computer Science (University of Mauritius), BSc Computer Science & Engineering (University of Mauritius).
 
 LANGUAGES: English, French, Mauritian Creole.
 

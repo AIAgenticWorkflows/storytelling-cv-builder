@@ -21,25 +21,25 @@ interface TimelineEntry {
 const timeline: TimelineEntry[] = [
   {
     company: "Aplica Ltd",
-    role: "Founder & AI Consultant",
+    role: "Founder",
     period: "Nov 2024 – Present",
-    impact: "Founded an AI consultancy helping businesses cut through hype and ship solutions that drive results.",
+    impact: "Launched an AI consultancy to cut through hype and deliver real business results.",
     outcomes: [
-      "Advising on practical AI adoption, product strategy and AI-powered operational tools.",
-      "Conference speaker on AI agents, robotics and implementation strategy.",
+      "Advise businesses on practical AI adoption and product strategy.",
+      "Build AI-powered tools that solve live operational problems.",
     ],
     accent: true,
   },
   {
     company: "Ringier South Africa",
-    role: "Product Manager — AI Team & Property Marketplace",
+    role: "Product Manager, AI Team & Property Marketplace",
     period: "Jul 2019 – Oct 2024",
-    impact: "3 platform migrations across 4 markets.",
+    impact: "Owned the product roadmap for the company's largest property marketplace and its first AI initiative.",
     outcomes: [
-      "Scaled cross-functional team from 7 to 17 while delivering an ambitious roadmap.",
-      "Partnered directly with CEOs across Mauritius, Kenya, Zimbabwe and Romania.",
-      "Ally Agent: pitched to C-suite and secured executive green light to advance to next stage.",
-      "Validated demand via user interviews and early sign-ups across Romania, Kenya and Slovakia.",
+      "Led 2 platform migrations across 4 countries with zero business disruption.",
+      "Grew the team from 7 to 17 while delivering an aggressive roadmap.",
+      "Pitched Ally Agent to the C-suite and secured approval to advance.",
+      "Validated AI demand through user interviews and early sign-ups across Romania, Kenya, and Slovakia.",
     ],
     portfolio: [
       { label: "BuyRentKenya", url: "https://www.buyrentkenya.com/" },
@@ -51,9 +51,10 @@ const timeline: TimelineEntry[] = [
     company: "Ringier South Africa",
     role: "Senior Software Developer",
     period: "Feb 2017 – Jun 2019",
-    impact: "Architected end-to-end property listing flow deployed across 5 African countries.",
+    impact: "Architected the end-to-end property listing flow deployed across 5 African countries.",
     outcomes: [
-      "Built a dynamic form builder that lifted landing page conversion across markets.",
+      "Built a scalable listing architecture deployed in 5 countries simultaneously.",
+      "Created a dynamic form builder that lifted landing-page conversion rates.",
     ],
     portfolio: [
       { label: "PropertyCloud Mauritius", url: "https://www.propertycloud.mu/" },
@@ -69,16 +70,22 @@ const timeline: TimelineEntry[] = [
     role: "Managing Director",
     period: "Mar 2015 – Jan 2017",
     location: "Mauritius",
-    impact: "Built and maintained housing allocation systems for University of Copenhagen and DTU.",
-    outcomes: [],
+    impact: "Built and ran live housing allocation systems for the University of Copenhagen and DTU.",
+    outcomes: [
+      "Served thousands of students across Denmark.",
+      "Optimized algorithms and databases directly from customer feedback.",
+    ],
   },
   {
     company: "Expand Technology",
     role: "Project Manager",
     period: "Feb 2013 – Feb 2015",
     location: "Mauritius",
-    impact: "Led a team of 7 to deliver a smartcard payment solution; owned core business logic.",
-    outcomes: [],
+    impact: "Led a team of 7 to deliver a smartcard payment solution.",
+    outcomes: [
+      "Built the core business logic layer for the payment system.",
+      "Owned the full sprint cycle from planning to release demos.",
+    ],
   },
   {
     company: "KnowGo Ltd",

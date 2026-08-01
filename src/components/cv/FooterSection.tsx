@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { Mail, Linkedin, Phone, Heart } from "lucide-react";
+import { Mail, Linkedin, Heart } from "lucide-react";
 
 const FooterSection = () => {
   return (
-    <footer className="py-12 md:py-20 px-4 md:px-6 border-t border-border/30 bg-warm-glow" id="contact">
+    <footer className="py-12 md:py-20 px-4 md:px-6 border-t border-border/30" id="contact">
       <div className="container mx-auto max-w-2xl text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -22,22 +22,13 @@ const FooterSection = () => {
 
           <div className="flex flex-wrap items-center justify-center gap-4">
             <motion.a
-              href="mailto:na@aplica.biz"
+              href="mailto:n.appanah@gmail.com"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.97 }}
               className="flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-body font-semibold hover:shadow-lg hover:shadow-primary/25 transition-shadow"
             >
               <Mail className="w-4 h-4" />
-              na@aplica.biz
-            </motion.a>
-            <motion.a
-              href="tel:+23059420144"
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.97 }}
-              className="flex items-center gap-2 px-6 py-3 rounded-full border border-border bg-background text-foreground font-body font-semibold hover:border-primary/40 hover:shadow-lg transition-all"
-            >
-              <Phone className="w-4 h-4 text-primary" />
-              +230 5942 0144
+              Get in Touch
             </motion.a>
             <motion.a
               href="https://www.linkedin.com/in/nishaappanah/"
@@ -47,7 +38,7 @@ const FooterSection = () => {
               whileTap={{ scale: 0.97 }}
               className="flex items-center gap-2 px-6 py-3 rounded-full border border-border bg-background text-foreground font-body font-semibold hover:border-primary/40 hover:shadow-lg transition-all"
             >
-              <Linkedin className="w-4 h-4 text-primary" />
+              <Linkedin className="w-4 h-4" />
               LinkedIn
             </motion.a>
           </div>
