@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader";
-import { Layers, Users, Globe, Award, Sparkles } from "lucide-react";
+import { Layers, Users, Globe, Award, Sparkles, Cpu, Code2, Wrench, Kanban } from "lucide-react";
 
 const capabilities = [
   {
@@ -9,7 +9,7 @@ const capabilities = [
     items: [
       "Roadmap ownership from vision through execution",
       "Platform migrations without revenue disruption",
-      "Marketplace growth",
+      "Marketplace growth across multiple markets",
     ],
   },
   {
@@ -32,11 +32,38 @@ const capabilities = [
   },
 ];
 
+const technicalSkills = [
+  {
+    icon: Cpu,
+    label: "AI & Automation",
+    items:
+      "OpenAI (ChatGPT, API), Claude, Gemini, Hugging Face, AI Studio, Lovable, Jules, Replit, n8n, Vercel, AI agents and prompt engineering",
+  },
+  {
+    icon: Code2,
+    label: "Programming & Frameworks",
+    items:
+      "C#, .NET Framework, ASP.NET, MVC, LINQ, WCF, XML, XSLT, HTML, CSS, VBA, Kendo UI, Telerik UI, Telerik Open Access",
+  },
+  {
+    icon: Wrench,
+    label: "Development Tools",
+    items: "Visual Studio, Git, SVN, IIS, VMware, AWS, Jira, Trello, SQL Server, MySQL",
+  },
+  {
+    icon: Kanban,
+    label: "Methodologies & Practices",
+    items:
+      "Agile/Scrum, sprint planning, backlog management, daily stand-ups, retrospectives",
+  },
+];
+
 const certifications = [
-  "AI Agents Fundamentals",
-  "Advanced Product Management: Vision, Strategy & Metrics",
-  "Vibe Coding",
-  "miniCON Agentic AI",
+  { name: "Google AI Professional", meta: "Google · 2026" },
+  { name: "AI Agents Fundamentals", meta: "Hugging Face · 2025" },
+  { name: "Advanced Product Management: Vision, Strategy & Metrics", meta: "Udemy · 2023" },
+  { name: "Vibe Coding", meta: "" },
+  { name: "miniCON Agentic AI", meta: "" },
 ];
 
 const SkillsSection = () => {
@@ -79,6 +106,37 @@ const SkillsSection = () => {
           ))}
         </div>
 
+        {/* Technical skills */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-40px" }}
+          transition={{ duration: 0.5 }}
+          className="mb-10 md:mb-16"
+        >
+          <h3 className="font-display text-xl font-semibold text-foreground text-center mb-6">
+            Technical Skills
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+            {technicalSkills.map((group) => (
+              <div
+                key={group.label}
+                className="bg-card rounded-xl p-5 border border-border/50 hover:border-primary/20 transition-colors"
+              >
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                    <group.icon className="w-4 h-4 text-primary" />
+                  </div>
+                  <h4 className="font-display text-base font-semibold text-foreground">
+                    {group.label}
+                  </h4>
+                </div>
+                <p className="font-body text-sm text-foreground leading-relaxed">{group.items}</p>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
         {/* Certifications */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -94,11 +152,14 @@ const SkillsSection = () => {
           <div className="flex flex-wrap justify-center gap-3">
             {certifications.map((cert) => (
               <span
-                key={cert}
+                key={cert.name}
                 className="flex items-center gap-1.5 text-sm font-body px-4 py-2 rounded-full border border-primary/20 bg-primary/5 text-foreground"
               >
-                <Sparkles className="w-3.5 h-3.5 text-primary" />
-                {cert}
+                <Sparkles className="w-3.5 h-3.5 text-primary shrink-0" />
+                {cert.name}
+                {cert.meta && (
+                  <span className="text-xs text-muted-foreground">({cert.meta})</span>
+                )}
               </span>
             ))}
           </div>

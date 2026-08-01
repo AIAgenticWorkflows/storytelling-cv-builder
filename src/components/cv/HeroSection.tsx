@@ -5,25 +5,26 @@ import profilePhoto from "@/assets/profile-photo.jfif";
 const selectedImpact = [
   {
     icon: TrendingUp,
-    text: "Led 2 major platform migrations across 4 markets with zero revenue disruption",
+    text: "Built and modernized platforms serving 1M+ monthly users and 3M+ sessions",
   },
   {
     icon: Rocket,
-    text: "Pitched Ally Agent to executive leadership, secured approval to advance to next stage",
+    text: "Pitched an AI Agent to executive leadership and secured approval to advance",
   },
   {
     icon: Mic,
-    text: "Conference speaker on AI agents, robotics & implementation strategy",
+    text: "Conference speaker on data privacy, AI agents and robotics",
   },
   {
     icon: Users,
-    text: "Scaled a cross-functional team from 7 to 17 while delivering on an ambitious transformation roadmap",
+    text: "Led cross-functional product and engineering teams of up to 17 people",
   },
   {
     icon: Zap,
-    text: "Founded Aplica, helping businesses unlock growth through practical AI solutions",
+    text: "Founded Aplica, an AI consultancy helping businesses automate with AI",
   },
 ];
+
 
 const HeroSection = () => {
   return (
@@ -78,7 +79,7 @@ const HeroSection = () => {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="font-display text-lg md:text-2xl text-primary mb-4 italic"
             >
-              I turn complex technology into products people actually use.
+              Software Engineer → Product Leader → AI Founder
             </motion.p>
 
             <motion.p
@@ -87,10 +88,13 @@ const HeroSection = () => {
               transition={{ delay: 0.55, duration: 0.6 }}
               className="font-body text-muted-foreground text-sm md:text-base max-w-xl leading-relaxed mb-6"
             >
-              20 years building, shipping, and leading: from code to product strategy to AI.
-              I've migrated platforms without breaking revenue, scaled teams across continents,
-              and now I help businesses make AI work in the real world.
+              AI Product & Technology Leader with 20 years of experience in software engineering,
+              product management and AI. Built and modernized platforms serving 1M+ monthly users,
+              led cross-functional product and engineering teams of up to 17 people and delivered
+              products across 5 countries. Founded an AI consultancy helping businesses automate
+              processes with AI.
             </motion.p>
+
 
             <motion.div
               initial={{ opacity: 0 }}
