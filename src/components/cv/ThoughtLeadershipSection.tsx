@@ -23,23 +23,24 @@ const talks: Talk[] = [
     year: "2023",
     url: "https://2023.mscc.mu/agenda/455578",
     description:
-      "Drawing from our own journey, we shared the knowledge we acquired through our interaction with the OpenAI API and running large language models locally.",
+      "Shared practical experience with the OpenAI API and running large language models locally.",
   },
   {
     title: "Build and Program an Interactive Robot",
-    year: "2019",
+    year: "2021",
     url: "https://www.youtube.com/watch?v=QHnxsfYhUtk",
     videoEmbed: "https://www.youtube.com/embed/QHnxsfYhUtk",
     description:
-      "A hands-on live demo building and programming a robot from scratch, bridging hardware and software to inspire the next generation of technologists.",
+      "Demonstrated building a robot from scratch with live programming.",
   },
   {
     title: "How to Program a Robot Arm",
     year: "2019",
     url: "https://2019.mscc.mu/session/98226",
     description:
-      "Deep dive into robotics programming: control systems, sensor integration, and the intersection of physical and digital engineering.",
+      "Built and programmed a 3D-printed robotic arm with a screen interface, explaining servo control (swivel, lower, mid, upper, and gripper) for coordinated movement.",
   },
+
 ];
 
 const ThoughtLeadershipSection = () => {
