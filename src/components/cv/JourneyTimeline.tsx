@@ -140,8 +140,8 @@ const timeline: TimelineEntry[] = [
 
 const JourneyTimeline = () => {
   return (
-    <section className="py-12 md:py-24 px-4 md:px-6 bg-warm-glow" id="journey">
-      <div className="container mx-auto max-w-4xl">
+    <section className="py-10 md:py-24 px-3 sm:px-4 md:px-6 bg-warm-glow" id="journey">
+      <div className="container mx-auto max-w-4xl px-0 sm:px-6 md:px-8">
         <SectionHeader
           label="The Journey"
           title="20 Years of Building"
@@ -149,7 +149,7 @@ const JourneyTimeline = () => {
         />
 
         <div className="relative">
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-timeline-line md:-translate-x-px" />
+          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-timeline-line md:-translate-x-px" />
 
           {timeline.map((entry, index) => {
             const isLeft = index % 2 === 0;
@@ -160,23 +160,23 @@ const JourneyTimeline = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="relative flex flex-col md:flex-row items-start mb-8 md:mb-12"
+                className="relative flex flex-col md:flex-row items-start mb-6 md:mb-12"
               >
                 <motion.div
                   initial={{ scale: 0 }}
                   whileInView={{ scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: 0.3, type: "spring", stiffness: 300 }}
-                  className="absolute left-8 md:left-1/2 w-4 h-4 -translate-x-1/2 rounded-full bg-background border-[3px] border-timeline-dot z-10 top-2"
+                  className="absolute left-4 md:left-1/2 w-4 h-4 -translate-x-1/2 rounded-full bg-background border-[3px] border-timeline-dot z-10 top-2"
                 />
 
                 <div
-                  className={`ml-16 md:ml-0 md:w-[calc(50%-2rem)] ${
+                  className={`ml-9 md:ml-0 md:w-[calc(50%-2rem)] ${
                     isLeft ? "md:pr-12" : "md:pl-12 md:ml-auto"
                   }`}
                 >
                   <div
-                    className={`p-4 md:p-6 rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-primary/30 cursor-default ${
+                    className={`px-4 py-3.5 md:p-6 rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-primary/30 cursor-default ${
                       entry.accent
                         ? "bg-primary/5 border border-primary/15 border-l-4 border-l-primary/40"
                         : "bg-card border border-border/50"
@@ -192,7 +192,7 @@ const JourneyTimeline = () => {
                       {entry.period}
                       {entry.location && ` · ${entry.location}`}
                     </p>
-                    <ul className="mt-3 space-y-1.5">
+                    <ul className="mt-2.5 space-y-1.5">
                       {entry.outcomes.map((o, i) => (
                         <li
                           key={i}
