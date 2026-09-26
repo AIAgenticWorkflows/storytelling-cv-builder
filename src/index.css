@@ -131,6 +131,16 @@
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
+  -webkit-text-size-adjust: 100%;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+section, footer {
+  overflow-wrap: anywhere;
 }
 
 /* Custom scrollbar */

@@ -63,7 +63,7 @@ const ThoughtLeadershipSection = () => {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="bg-background rounded-xl border border-border/50 overflow-hidden hover:border-primary/20 hover:shadow-lg transition-all duration-300"
             >
-              <div className="p-5 md:p-6">
+              <div className="p-4 sm:p-5 md:p-6">
                 <div className="flex items-start gap-3">
                   <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
                     {talk.videoEmbed ? (
@@ -97,7 +97,8 @@ const ThoughtLeadershipSection = () => {
                 </div>
               </div>
               {talk.videoEmbed && (
-                <div className="aspect-video w-full md:max-w-lg mx-auto px-5 pb-5">
+                <div className="px-4 pb-4 md:px-5 md:pb-5 md:max-w-lg mx-auto w-full">
+                  <div className="aspect-video w-full">
                   <iframe
                     src={talk.videoEmbed}
                     title={talk.title}
@@ -105,6 +106,7 @@ const ThoughtLeadershipSection = () => {
                     allowFullScreen
                     className="w-full h-full rounded-lg"
                   />
+                  </div>
                 </div>
               )}
             </motion.div>

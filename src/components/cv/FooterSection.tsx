@@ -15,17 +15,17 @@ const FooterSection = () => {
             Let's Build Something{" "}
             <span className="text-primary italic">Remarkable</span>
           </h2>
-          <p className="font-body text-muted-foreground text-base md:text-lg mb-6 md:mb-8 leading-relaxed">
+          <p className="font-body text-muted-foreground text-[15px] md:text-lg mb-6 md:mb-8 leading-relaxed">
             I'm looking for my next chapter: leading product and AI innovation 
             at a company that believes technology should serve people, not the other way around.
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4">
             <motion.a
               href="mailto:n.appanah@gmail.com"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.97 }}
-              className="flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-body font-semibold hover:shadow-lg hover:shadow-primary/25 transition-shadow"
+              className="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-body font-semibold hover:shadow-lg hover:shadow-primary/25 transition-shadow"
             >
               <Mail className="w-4 h-4" />
               Get in Touch
@@ -36,14 +36,14 @@ const FooterSection = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.97 }}
-              className="flex items-center gap-2 px-6 py-3 rounded-full border border-border bg-background text-foreground font-body font-semibold hover:border-primary/40 hover:shadow-lg transition-all"
+              className="flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-border bg-background text-foreground font-body font-semibold hover:border-primary/40 hover:shadow-lg transition-all"
             >
               <Linkedin className="w-4 h-4" />
               LinkedIn
             </motion.a>
           </div>
 
-          <p className="mt-16 text-sm text-muted-foreground font-body flex items-center justify-center gap-1">
+          <p className="mt-10 md:mt-16 text-sm text-muted-foreground font-body flex items-center justify-center gap-1">
             Crafted with <Heart className="w-3.5 h-3.5 text-primary" /> by Nisha Appanah
           </p>
         </motion.div>

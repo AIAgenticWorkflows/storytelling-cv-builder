@@ -117,7 +117,7 @@ const RoleTailoringSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-card rounded-2xl border border-border/50 p-6 md:p-8"
+          className="bg-card rounded-2xl border border-border/50 p-4 sm:p-6 md:p-8"
         >
           <div className="grid md:grid-cols-2 gap-6">
             {/* Input */}
@@ -138,7 +138,7 @@ const RoleTailoringSection = () => {
                 }}
                 maxLength={10000}
                 placeholder="Paste the job description here..."
-                className="flex-1 min-h-[200px] md:min-h-[280px] w-full rounded-xl border border-border bg-background px-4 py-3 font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary/50 transition-all resize-none"
+                className="flex-1 min-h-[180px] md:min-h-[280px] w-full rounded-xl border border-border bg-background px-3 sm:px-4 py-3 font-body text-base sm:text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary/50 transition-all resize-none"
               />
             </div>
 
@@ -149,7 +149,7 @@ const RoleTailoringSection = () => {
               </p>
               <div
                 ref={resultRef}
-                className="flex-1 min-h-[200px] md:min-h-[280px] w-full rounded-xl border border-border bg-muted/50 px-4 py-3 overflow-y-auto"
+                className="flex-1 min-h-[160px] md:min-h-[280px] max-h-[60vh] md:max-h-none w-full rounded-xl border border-border bg-muted/50 px-3 sm:px-4 py-3 overflow-y-auto"
               >
                 {error ? (
                   <p className="font-body text-sm text-destructive">{error}</p>
@@ -167,13 +167,13 @@ const RoleTailoringSection = () => {
           </div>
 
           {/* Button */}
-          <div className="mt-6 flex justify-center md:justify-start">
+          <div className="mt-5 md:mt-6 flex justify-center md:justify-start">
             <motion.button
               onClick={handleAnalyze}
               disabled={!jobDescription.trim() || isLoading}
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-body font-semibold disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-lg hover:shadow-primary/25 transition-shadow"
+              className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3 rounded-full bg-primary text-primary-foreground font-body font-semibold disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-lg hover:shadow-primary/25 transition-shadow"
             >
               {isLoading ? (
                 <Loader2 className="w-4 h-4 animate-spin" />

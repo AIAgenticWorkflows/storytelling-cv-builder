@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Linkedin, ArrowDown, Zap, TrendingUp, Users, Mic, Rocket, Download } from "lucide-react";
+import { Linkedin, ArrowDown, Zap, TrendingUp, Users, Mic, Rocket, Download, FileText, ExternalLink } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jfif";
 
 const selectedImpact = [
@@ -28,7 +28,7 @@ const selectedImpact = [
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[90vh] md:min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-24">
+    <section className="relative md:min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-12 md:pt-24 md:pb-0">
       {/* Subtle background shapes */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 rounded-full bg-primary/5 blur-3xl" />
@@ -77,16 +77,16 @@ const HeroSection = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="font-display text-lg md:text-2xl text-primary mb-4 italic"
+              className="font-display text-base sm:text-lg md:text-2xl text-primary mb-4 italic leading-snug"
             >
-              Software Engineer → Product Leader → AI Founder
+              <span className="whitespace-nowrap">Software Engineer</span> → <span className="whitespace-nowrap">Product Leader</span> → <span className="whitespace-nowrap">AI Founder</span>
             </motion.p>
 
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.55, duration: 0.6 }}
-              className="font-body text-muted-foreground text-sm md:text-base max-w-xl leading-relaxed mb-6"
+              className="font-body text-muted-foreground text-[15px] md:text-base max-w-xl leading-relaxed mb-6 mx-auto md:mx-0"
             >
               AI Product & Technology Leader with 20 years of experience in software engineering,
               product management and AI. Built and modernized platforms serving 1M+ monthly users,
@@ -100,49 +100,59 @@ const HeroSection = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7, duration: 0.5 }}
-              className="flex flex-wrap items-center justify-center md:justify-start gap-4"
+              className="flex flex-col items-center md:items-start gap-3"
             >
-              <a
-                href="https://www.linkedin.com/in/nishaappanah/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-primary-foreground font-body text-sm font-medium hover:bg-primary/90 transition-colors"
-              >
-                <Linkedin className="w-4 h-4" />
-                Connect on LinkedIn
-              </a>
-              <a
-                href="#journey"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-border text-foreground font-body text-sm font-medium hover:border-primary/40 hover:bg-primary/5 transition-colors"
-              >
-                <ArrowDown className="w-4 h-4" />
-                See my journey
-              </a>
-              <a
-                href="/Nisha_Appanah_CV.pdf"
-                download
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-primary/30 bg-primary/5 text-primary font-body text-sm font-medium hover:bg-primary/10 hover:border-primary/50 transition-colors"
-              >
-                <Download className="w-4 h-4" />
-                Download CV (PDF)
-              </a>
-              <a
-                href="/Nisha_Appanah_CV_ATS.pdf"
-                download
-                title="Plain single-column version for applicant tracking systems"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-primary/30 bg-primary/5 text-primary font-body text-sm font-medium hover:bg-primary/10 hover:border-primary/50 transition-colors"
-              >
-                <Download className="w-4 h-4" />
-                ATS CV (PDF)
-              </a>
-              <a
-                href="/Nisha_Appanah_CV_ATS.html"
-                target="_blank"
-                rel="noopener"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-primary/30 bg-primary/5 text-primary font-body text-sm font-medium hover:bg-primary/10 hover:border-primary/50 transition-colors"
-              >
-                ATS CV (HTML)
-              </a>
+              <div className="flex flex-wrap items-center justify-center md:justify-start gap-3">
+                <a
+                  href="https://www.linkedin.com/in/nishaappanah/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-primary-foreground font-body text-sm font-medium hover:bg-primary/90 transition-colors"
+                >
+                  <Linkedin className="w-4 h-4" />
+                  Connect on LinkedIn
+                </a>
+                <a
+                  href="#journey"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-border text-foreground font-body text-sm font-medium hover:border-primary/40 hover:bg-primary/5 transition-colors"
+                >
+                  <ArrowDown className="w-4 h-4" />
+                  See my journey
+                </a>
+              </div>
+
+              <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-3 gap-y-2">
+                <span className="w-full md:w-auto text-center md:text-left font-body text-xs uppercase tracking-wider text-muted-foreground">
+                  Download CV
+                </span>
+                <a
+                  href="/Nisha_Appanah_CV.pdf"
+                  download
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-primary/30 bg-primary/5 text-primary font-body text-sm font-medium hover:bg-primary/10 hover:border-primary/50 transition-colors"
+                >
+                  <Download className="w-4 h-4" />
+                  Designed PDF
+                </a>
+                <a
+                  href="/Nisha_Appanah_CV_ATS.pdf"
+                  download
+                  title="Plain single-column version for applicant tracking systems"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-primary/30 bg-primary/5 text-primary font-body text-sm font-medium hover:bg-primary/10 hover:border-primary/50 transition-colors"
+                >
+                  <FileText className="w-4 h-4" />
+                  ATS PDF
+                </a>
+                <a
+                  href="/Nisha_Appanah_CV_ATS.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Plain text version for applicant tracking systems, opens in a new tab"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-border text-foreground font-body text-sm font-medium hover:border-primary/40 hover:bg-primary/5 transition-colors"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  ATS text version
+                </a>
+              </div>
             </motion.div>
           </motion.div>
         </div>
@@ -167,7 +177,7 @@ const HeroSection = () => {
                 className="flex items-start gap-3 p-3 rounded-lg bg-card border border-border/50 hover:border-primary/20 transition-colors"
               >
                 <item.icon className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                <p className="font-body text-sm text-foreground leading-snug">{item.text}</p>
+                <p className="font-body text-sm md:text-[15px] text-foreground leading-snug">{item.text}</p>
               </motion.div>
             ))}
           </div>

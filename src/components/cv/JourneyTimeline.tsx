@@ -140,7 +140,7 @@ const timeline: TimelineEntry[] = [
 
 const JourneyTimeline = () => {
   return (
-    <section className="py-10 md:py-24 px-3 sm:px-4 md:px-6 bg-warm-glow" id="journey">
+    <section className="py-10 md:py-24 px-4 md:px-6 bg-warm-glow" id="journey">
       <div className="container mx-auto max-w-4xl px-0 sm:px-6 md:px-8">
         <SectionHeader
           label="The Journey"
@@ -188,7 +188,7 @@ const JourneyTimeline = () => {
                     <h3 className="font-display text-lg md:text-xl font-bold text-foreground mb-0.5">
                       {entry.role}
                     </h3>
-                    <p className="text-muted-foreground font-body text-xs mb-3">
+                    <p className="text-muted-foreground font-body text-xs md:text-sm mb-3">
                       {entry.period}
                       {entry.location && ` · ${entry.location}`}
                     </p>
@@ -196,7 +196,7 @@ const JourneyTimeline = () => {
                       {entry.outcomes.map((o, i) => (
                         <li
                           key={i}
-                          className="text-sm text-foreground font-body flex items-start gap-2"
+                          className="text-sm md:text-[15px] text-foreground font-body flex items-start gap-2 leading-snug"
                         >
                           <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0 mt-1.5" />
                           {o}

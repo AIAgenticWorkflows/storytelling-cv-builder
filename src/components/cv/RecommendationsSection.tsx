@@ -99,18 +99,18 @@ const RecommendationsSection = () => {
               dragElastic={0.2}
               onDragEnd={handleDragEnd}
               whileHover={{ scale: 1.01 }}
-              className="bg-quote-bg border border-border/50 border-l-4 border-l-primary/30 rounded-2xl p-6 md:p-12 relative hover:shadow-xl hover:border-primary/20 transition-all duration-300 cursor-grab active:cursor-grabbing touch-pan-y"
+              className="bg-quote-bg border border-border/50 border-l-4 border-l-primary/30 rounded-2xl px-5 pt-12 pb-6 md:p-12 relative hover:shadow-xl hover:border-primary/20 transition-all duration-300 cursor-grab active:cursor-grabbing touch-pan-y"
             >
-              <Quote className="absolute top-6 left-6 w-10 h-10 text-primary/15" />
+              <Quote className="absolute top-4 left-5 md:top-6 md:left-6 w-7 h-7 md:w-10 md:h-10 text-primary/15" aria-hidden="true" />
               <div className="relative z-10">
-                <p className="font-body text-foreground text-base md:text-lg leading-relaxed mb-6 md:mb-8 italic">
+                <p className="font-body text-foreground text-[15px] md:text-lg leading-relaxed mb-5 md:mb-8 italic">
                   "{rec.text}"
                 </p>
                 <div className="border-t border-border/50 pt-6">
                   <p className="font-display text-lg font-semibold text-foreground">
                     {rec.name}
                   </p>
-                  <p className="font-body text-sm text-primary">{rec.title}</p>
+                  <p className="font-body text-sm text-primary leading-snug">{rec.title}</p>
                   <p className="font-body text-xs text-muted-foreground mt-1">
                     {rec.relationship}
                   </p>
@@ -120,7 +120,7 @@ const RecommendationsSection = () => {
           </AnimatePresence>
 
           {/* Navigation */}
-          <div className="flex items-center justify-center gap-4 mt-8">
+          <div className="flex items-center justify-center gap-3 sm:gap-4 mt-6 md:mt-8">
             <motion.button
               whileHover={{ scale: 1.15 }}
               whileTap={{ scale: 0.9 }}
@@ -131,15 +131,15 @@ const RecommendationsSection = () => {
               <ChevronLeft className="w-4 h-4 text-foreground" />
             </motion.button>
 
-            <div className="flex gap-2">
+            <div className="flex gap-1.5 sm:gap-2 flex-wrap justify-center max-w-[180px] sm:max-w-none">
               {recommendations.map((_, i) => (
                 <button
                   key={i}
                   onClick={() => setCurrent(i)}
-                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                  className={`h-2 rounded-full transition-all duration-300 ${
                     i === current
                       ? "bg-primary w-6"
-                      : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                      : "bg-muted-foreground/30 hover:bg-muted-foreground/50 w-2"
                   }`}
                   aria-label={`Go to recommendation ${i + 1}`}
                 />

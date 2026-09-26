@@ -27,7 +27,7 @@ const EducationSection = () => {
       <div className="container mx-auto max-w-3xl">
         <SectionHeader label="Foundation" title="Education" />
 
-        <div className="space-y-6">
+        <div className="space-y-3 md:space-y-6">
           {education.map((edu, i) => (
             <motion.div
               key={edu.school}
@@ -36,7 +36,7 @@ const EducationSection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               whileHover={{ x: 8, scale: 1.01 }}
-              className="flex gap-4 items-start p-4 rounded-xl hover:bg-background/80 transition-colors duration-200 cursor-default"
+              className="flex gap-3 sm:gap-4 items-start p-3 sm:p-4 rounded-xl hover:bg-background/80 transition-colors duration-200 cursor-default"
             >
               <motion.div
                 whileHover={{ rotate: 12 }}

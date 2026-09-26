@@ -33,7 +33,7 @@ const NavBar = () => {
             : "bg-transparent"
         }`}
       >
-        <div className="container mx-auto max-w-5xl flex items-center justify-between px-6 py-4">
+        <div className="container mx-auto max-w-5xl flex items-center justify-between py-3 md:py-4">
           <div />
 
 
@@ -53,10 +53,11 @@ const NavBar = () => {
           {/* Mobile toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden text-foreground"
+            className="md:hidden text-foreground -mr-2 p-2 rounded-lg hover:bg-primary/5"
             aria-label="Toggle menu"
+            aria-expanded={mobileOpen}
           >
-            {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
       </motion.nav>
@@ -68,14 +69,14 @@ const NavBar = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-40 bg-background/95 backdrop-blur-lg flex flex-col items-center justify-center gap-8"
+            className="fixed inset-0 z-40 bg-background/95 backdrop-blur-lg flex flex-col items-center justify-center gap-6 overflow-y-auto py-20"
           >
             {links.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setMobileOpen(false)}
-                className="font-display text-2xl text-foreground hover:text-primary transition-colors"
+                className="font-display text-2xl text-foreground hover:text-primary transition-colors py-1 px-4"
               >
                 {l.label}
               </a>

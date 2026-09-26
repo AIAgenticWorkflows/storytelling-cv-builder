@@ -84,7 +84,7 @@ const SkillsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-card rounded-xl p-5 md:p-6 border border-border/50 hover:border-primary/20 transition-all duration-300 hover:shadow-lg h-full"
+              className="bg-card rounded-xl p-4 sm:p-5 md:p-6 border border-border/50 hover:border-primary/20 transition-all duration-300 hover:shadow-lg h-full"
             >
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -121,7 +121,7 @@ const SkillsSection = () => {
             {technicalSkills.map((group) => (
               <div
                 key={group.label}
-                className="bg-card rounded-xl p-5 border border-border/50 hover:border-primary/20 transition-colors"
+                className="bg-card rounded-xl p-4 sm:p-5 border border-border/50 hover:border-primary/20 transition-colors"
               >
                 <div className="flex items-center gap-3 mb-2">
                   <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
@@ -149,11 +149,11 @@ const SkillsSection = () => {
             <Award className="w-5 h-5 text-primary" />
             <h3 className="font-display text-xl font-semibold text-foreground">Certifications</h3>
           </div>
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
             {certifications.map((cert) => (
               <span
                 key={cert.name}
-                className="flex items-center gap-1.5 text-sm font-body px-4 py-2 rounded-full border border-primary/20 bg-primary/5 text-foreground"
+                className="inline-flex items-center gap-1.5 text-sm font-body px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-center border border-primary/20 bg-primary/5 text-foreground"
               >
                 <Sparkles className="w-3.5 h-3.5 text-primary shrink-0" />
                 {cert.name}

@@ -16,7 +16,7 @@ const NotFound = () => {
         <meta name="description" content="The page you are looking for could not be found." />
         <meta property="og:title" content="Page Not Found — Nisha Appanah" />
         <meta property="og:description" content="The page you are looking for could not be found." />
-        <meta property="og:url" content={`https://nishaappanah.lovable.app${location.pathname}`} />
+        <meta property="og:url" content={`https://nisha.aplica.biz${location.pathname}`} />
         <meta name="robots" content="noindex" />
       </Helmet>
       <div className="flex min-h-screen items-center justify-center bg-muted">
