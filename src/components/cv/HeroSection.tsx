@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Linkedin, ArrowDown, Zap, TrendingUp, Users, Mic, Rocket, Download, FileText, ExternalLink } from "lucide-react";
+import { Linkedin, ArrowDown, Zap, TrendingUp, Users, Mic, Rocket, Download, FileText } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jfif";
 
 const selectedImpact = [
@@ -141,16 +141,6 @@ const HeroSection = () => {
                 >
                   <FileText className="w-4 h-4" />
                   ATS PDF
-                </a>
-                <a
-                  href="/Nisha_Appanah_CV_ATS.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Plain text version for applicant tracking systems, opens in a new tab"
-                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-border text-foreground font-body text-sm font-medium hover:border-primary/40 hover:bg-primary/5 transition-colors"
-                >
-                  <ExternalLink className="w-4 h-4" />
-                  ATS text version
                 </a>
               </div>
             </motion.div>
